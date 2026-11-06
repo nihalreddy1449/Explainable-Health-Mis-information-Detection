@@ -1,0 +1,64 @@
+system             hybrid  tfidf     v2
+criterion                              
+costs               0.754  0.736  0.753
+benefits            0.739  0.736  0.677
+harms               0.750  0.733  0.717
+evidence_quality    0.726  0.711  0.691
+disease_mongering   0.640  0.643  0.540
+independent_srcs    0.627  0.635  0.602
+alternatives        0.619  0.626  0.587
+availability        0.623  0.651  0.610
+novelty             0.658  0.632  0.649
+press_release       0.746  0.718  0.726
+
+blend weight on TF-IDF: {'costs': 0.8, 'benefits': 0.6, 'harms': 0.7, 'evidence_quality': 0.6, 'disease_mongering': 0.9, 'independent_srcs': 0.3, 'alternatives': 0.6, 'availability': 0.3, 'novelty': 0.5, 'press_release': 0.2}
+{
+  "v2": {
+    "criteria_macro_f1": 0.5404,
+    "mean_auc": 0.6551,
+    "mean_auc_shown": 0.6679,
+    "mean_mcc": 0.2112,
+    "pairwise_corr_of_predictions": 0.936,
+    "within_article_auc_profile_only": 0.556
+  },
+  "tfidf": {
+    "criteria_macro_f1": 0.564,
+    "mean_auc": 0.6821,
+    "mean_auc_shown": 0.6865,
+    "mean_mcc": 0.2488,
+    "pairwise_corr_of_predictions": 0.453,
+    "within_article_auc_profile_only": 0.612
+  },
+  "hybrid": {
+    "criteria_macro_f1": 0.581,
+    "mean_auc": 0.6883,
+    "mean_auc_shown": 0.6937,
+    "mean_mcc": 0.2725,
+    "pairwise_corr_of_predictions": 0.718,
+    "within_article_auc_profile_only": 0.607
+  },
+  "base_rates_within_article_auc": 0.787,
+  "reviewer_label_pairwise_corr": 0.208,
+  "paired_bootstrap_mean_auc_hybrid_minus_v2": {
+    "delta": 0.0259,
+    "ci_low": 0.0131,
+    "ci_high": 0.0392,
+    "P(no gain)": 0.0
+  },
+  "verdict": {
+    "v2": {
+      "val_cv_macro_f1": 0.6365,
+      "val_cv_auc": 0.6392,
+      "test_macro_f1": 0.6971,
+      "test_accuracy": 0.7327,
+      "test_auc": 0.7256
+    },
+    "hybrid": {
+      "val_cv_macro_f1": 0.6576,
+      "val_cv_auc": 0.6699,
+      "test_macro_f1": 0.6675,
+      "test_accuracy": 0.7044,
+      "test_auc": 0.6927
+    }
+  }
+}

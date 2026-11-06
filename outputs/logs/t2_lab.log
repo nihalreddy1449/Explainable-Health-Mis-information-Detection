@@ -1,0 +1,678 @@
+      ep1 loss=1.4012 val_macroF1(bin)=0.5556  <- best
+
+##############################################################################
+T2 LAB phase=objective  2026-09-16 01:35:32  device=cuda amp=torch.bfloat16
+##############################################################################
+
+==============================================================================
+VARIANT A_binary   backbone=pubmedbert heads=['binary'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=4
+==============================================================================
+  seed 42
+      ep1 loss=0.6867 val_macroF1(bin)=0.5454  <- best
+      ep2 loss=0.5979 val_macroF1(bin)=0.6173  <- best
+      ep3 loss=0.4403 val_macroF1(bin)=0.6146
+      ep4 loss=0.2758 val_macroF1(bin)=0.5900
+  seed 1337
+      ep1 loss=0.6721 val_macroF1(bin)=0.5704  <- best
+      ep2 loss=0.5811 val_macroF1(bin)=0.6074  <- best
+      ep3 loss=0.4450 val_macroF1(bin)=0.6022
+      ep4 loss=0.2869 val_macroF1(bin)=0.5963
+  seed 2024
+      ep1 loss=0.6850 val_macroF1(bin)=0.4930  <- best
+      ep2 loss=0.6036 val_macroF1(bin)=0.6187  <- best
+      ep3 loss=0.4532 val_macroF1(bin)=0.5845
+      ep4 loss=0.3205 val_macroF1(bin)=0.5895
+
+  per-seed mean +- std:
+    bin       acc=0.7233+-0.0137  macroF1=0.6620+-0.0258  recall=0.4455+-0.0636  auc=0.7098+-0.0079
+  seed-ensemble:
+    bin       acc=0.6792  macroF1=0.6539  recall=0.6075  auc=0.7199
+
+==============================================================================
+VARIANT B_ordinal   backbone=pubmedbert heads=['ordinal'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=4
+==============================================================================
+  seed 42
+      ep1 loss=0.2733 val_macroF1(ord)=0.6150  <- best
+      ep2 loss=0.2420 val_macroF1(ord)=0.5028
+      ep3 loss=0.2054 val_macroF1(ord)=0.5375
+      ep4 loss=0.1734 val_macroF1(ord)=0.4992
+  seed 1337
+      ep1 loss=0.2820 val_macroF1(ord)=0.5787  <- best
+      ep2 loss=0.2543 val_macroF1(ord)=0.5889  <- best
+      ep3 loss=0.2130 val_macroF1(ord)=0.4541
+      ep4 loss=0.1773 val_macroF1(ord)=0.4822
+  seed 2024
+      ep1 loss=0.2739 val_macroF1(ord)=0.4881  <- best
+      ep2 loss=0.2445 val_macroF1(ord)=0.4755
+      ep3 loss=0.2035 val_macroF1(ord)=0.5655  <- best
+      ep4 loss=0.1708 val_macroF1(ord)=0.4759
+
+  per-seed mean +- std:
+    ord       acc=0.7065+-0.0214  macroF1=0.6704+-0.0076  recall=0.5701+-0.1062  auc=0.7119+-0.0019
+  seed-ensemble:
+    ord       acc=0.7358  macroF1=0.6969  recall=0.5607  auc=0.7165
+
+==============================================================================
+VARIANT C_criteria   backbone=pubmedbert heads=['criteria'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=0.3732 val_macroF1(crit)=0.5054  <- best
+      ep2 loss=0.3549 val_macroF1(crit)=0.5559  <- best
+      ep3 loss=0.3199 val_macroF1(crit)=0.5839  <- best
+      ep4 loss=0.2857 val_macroF1(crit)=0.5699
+      ep5 loss=0.2644 val_macroF1(crit)=0.5837
+  seed 1337
+      ep1 loss=0.3742 val_macroF1(crit)=0.5740  <- best
+      ep2 loss=0.3564 val_macroF1(crit)=0.5768  <- best
+      ep3 loss=0.3250 val_macroF1(crit)=0.6029  <- best
+      ep4 loss=0.2955 val_macroF1(crit)=0.5956
+      ep5 loss=0.2693 val_macroF1(crit)=0.5998
+  seed 2024
+      ep1 loss=0.3731 val_macroF1(crit)=0.4473  <- best
+      ep2 loss=0.3537 val_macroF1(crit)=0.6165  <- best
+      ep3 loss=0.3198 val_macroF1(crit)=0.5460
+      ep4 loss=0.2896 val_macroF1(crit)=0.6198  <- best
+      ep5 loss=0.2686 val_macroF1(crit)=0.6200  <- best
+
+  per-seed mean +- std:
+    crit      acc=0.7055+-0.0339  macroF1=0.6770+-0.0271  recall=0.6075+-0.0281  auc=0.7232+-0.0144
+  seed-ensemble:
+    crit      acc=0.7327  macroF1=0.6857  recall=0.5140  auc=0.7340
+
+==============================================================================
+VARIANT D_bin_crit   backbone=pubmedbert heads=['binary', 'criteria'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=1.0617 val_macroF1(bin)=0.5178  <- best
+      ep2 loss=0.9782 val_macroF1(bin)=0.6048  <- best
+      ep3 loss=0.8087 val_macroF1(bin)=0.5574
+      ep4 loss=0.6210 val_macroF1(bin)=0.5567
+      ep5 loss=0.4976 val_macroF1(bin)=0.5647
+  seed 1337
+      ep1 loss=1.0546 val_macroF1(bin)=0.5693  <- best
+      ep2 loss=0.9644 val_macroF1(bin)=0.5941  <- best
+      ep3 loss=0.8033 val_macroF1(bin)=0.5917
+      ep4 loss=0.6226 val_macroF1(bin)=0.6127  <- best
+      ep5 loss=0.5060 val_macroF1(bin)=0.6082
+  seed 2024
+      ep1 loss=1.0676 val_macroF1(bin)=0.6167  <- best
+      ep2 loss=0.9803 val_macroF1(bin)=0.5957
+      ep3 loss=0.8249 val_macroF1(bin)=0.5572
+      ep4 loss=0.6758 val_macroF1(bin)=0.5994
+      ep5 loss=0.5483 val_macroF1(bin)=0.6181  <- best
+
+  per-seed mean +- std:
+    bin       acc=0.6971+-0.0268  macroF1=0.6485+-0.0152  recall=0.4860+-0.0486  auc=0.6968+-0.0078
+    blend     acc=0.6992+-0.0299  macroF1=0.6518+-0.0192  recall=0.4922+-0.0378  auc=0.6961+-0.0075
+    crit      acc=0.7096+-0.0192  macroF1=0.6563+-0.0292  recall=0.4735+-0.0749  auc=0.6979+-0.0097
+  seed-ensemble:
+    bin       acc=0.7075  macroF1=0.6733  recall=0.5701  auc=0.7094
+    crit      acc=0.7264  macroF1=0.6885  recall=0.5607  auc=0.7097
+
+==============================================================================
+VARIANT E_ord_crit   backbone=pubmedbert heads=['criteria', 'ordinal'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=0.6444 val_macroF1(ord)=0.5971  <- best
+      ep2 loss=0.6004 val_macroF1(ord)=0.6143  <- best
+      ep3 loss=0.5293 val_macroF1(ord)=0.5851
+      ep4 loss=0.4777 val_macroF1(ord)=0.5553
+      ep5 loss=0.4452 val_macroF1(ord)=0.5343
+  seed 1337
+      ep1 loss=0.6488 val_macroF1(ord)=0.5346  <- best
+      ep2 loss=0.6007 val_macroF1(ord)=0.5532  <- best
+      ep3 loss=0.5402 val_macroF1(ord)=0.3732
+      ep4 loss=0.4912 val_macroF1(ord)=0.4716
+      ep5 loss=0.4564 val_macroF1(ord)=0.4571
+  seed 2024
+      ep1 loss=0.6454 val_macroF1(ord)=0.5008  <- best
+      ep2 loss=0.6035 val_macroF1(ord)=0.5841  <- best
+      ep3 loss=0.5478 val_macroF1(ord)=0.5215
+      ep4 loss=0.4885 val_macroF1(ord)=0.5171
+      ep5 loss=0.4538 val_macroF1(ord)=0.5312
+
+  per-seed mean +- std:
+    blend     acc=0.7306+-0.0189  macroF1=0.6831+-0.0240  recall=0.5109+-0.0378  auc=0.7221+-0.0115
+    crit      acc=0.7243+-0.0155  macroF1=0.6820+-0.0186  recall=0.5390+-0.0702  auc=0.7222+-0.0137
+    ord       acc=0.7337+-0.0190  macroF1=0.6871+-0.0238  recall=0.5171+-0.0389  auc=0.7222+-0.0116
+  seed-ensemble:
+    ord       acc=0.6604  macroF1=0.6478  recall=0.7009  auc=0.7275
+    crit      acc=0.7296  macroF1=0.6972  recall=0.5981  auc=0.7267
+
+==============================================================================
+VARIANT F_all_heads   backbone=pubmedbert heads=['binary', 'criteria', 'ordinal'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=1.3317 val_macroF1(bin)=0.5722  <- best
+      ep2 loss=1.2370 val_macroF1(bin)=0.6347  <- best
+      ep3 loss=1.0398 val_macroF1(bin)=0.5901
+      ep4 loss=0.8240 val_macroF1(bin)=0.5599
+      ep5 loss=0.6967 val_macroF1(bin)=0.5667
+  seed 1337
+      ep1 loss=1.3225 val_macroF1(bin)=0.4704  <- best
+      ep2 loss=1.2242 val_macroF1(bin)=0.6201  <- best
+      ep3 loss=1.0436 val_macroF1(bin)=0.6077
+      ep4 loss=0.8773 val_macroF1(bin)=0.6234  <- best
+      ep5 loss=0.7473 val_macroF1(bin)=0.6108
+  seed 2024
+      ep1 loss=1.3440 val_macroF1(bin)=0.5859  <- best
+      ep2 loss=1.2226 val_macroF1(bin)=0.6173  <- best
+      ep3 loss=1.0376 val_macroF1(bin)=0.5904
+      ep4 loss=0.8499 val_macroF1(bin)=0.5624
+      ep5 loss=0.7300 val_macroF1(bin)=0.5394
+
+  per-seed mean +- std:
+    bin       acc=0.6960+-0.0189  macroF1=0.6606+-0.0175  recall=0.5670+-0.1075  auc=0.7089+-0.0093
+    blend     acc=0.7107+-0.0175  macroF1=0.6729+-0.0122  recall=0.5545+-0.0608  auc=0.7123+-0.0030
+    crit      acc=0.7055+-0.0110  macroF1=0.6609+-0.0139  recall=0.5109+-0.0389  auc=0.7012+-0.0089
+    ord       acc=0.7107+-0.0083  macroF1=0.6717+-0.0182  recall=0.5483+-0.0689  auc=0.7095+-0.0059
+  seed-ensemble:
+    bin       acc=0.6761  macroF1=0.6601  recall=0.6822  auc=0.7192
+    ord       acc=0.7201  macroF1=0.6844  recall=0.5701  auc=0.7183
+    crit      acc=0.7201  macroF1=0.6629  recall=0.4579  auc=0.7104
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_lab_objective.csv  (49 rows)
+
+##############################################################################
+T2 LAB phase=input  2026-09-16 02:38:04  device=cuda amp=torch.bfloat16
+##############################################################################
+
+==============================================================================
+VARIANT G_headtail   backbone=pubmedbert heads=['criteria', 'ordinal'] input=headtail max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=0.6441 val_macroF1(ord)=0.6038  <- best
+      ep2 loss=0.6071 val_macroF1(ord)=0.6048  <- best
+      ep3 loss=0.5509 val_macroF1(ord)=0.5572
+      ep4 loss=0.4974 val_macroF1(ord)=0.5280
+      ep5 loss=0.4583 val_macroF1(ord)=0.5341
+  seed 1337
+      ep1 loss=0.6526 val_macroF1(ord)=0.3375  <- best
+      ep2 loss=0.6153 val_macroF1(ord)=0.6106  <- best
+      ep3 loss=0.5633 val_macroF1(ord)=0.4266
+      ep4 loss=0.5099 val_macroF1(ord)=0.4989
+      ep5 loss=0.4729 val_macroF1(ord)=0.5091
+  seed 2024
+      ep1 loss=0.6421 val_macroF1(ord)=0.4898  <- best
+      ep2 loss=0.6129 val_macroF1(ord)=0.5760  <- best
+      ep3 loss=0.5539 val_macroF1(ord)=0.5281
+      ep4 loss=0.5015 val_macroF1(ord)=0.4299
+      ep5 loss=0.4626 val_macroF1(ord)=0.4807
+
+  per-seed mean +- std:
+    blend     acc=0.6813+-0.0101  macroF1=0.6513+-0.0108  recall=0.5763+-0.0143  auc=0.6972+-0.0051
+    crit      acc=0.6792+-0.0158  macroF1=0.6392+-0.0102  recall=0.5171+-0.0480  auc=0.6963+-0.0053
+    ord       acc=0.6939+-0.0142  macroF1=0.6632+-0.0148  recall=0.5825+-0.0195  auc=0.6961+-0.0057
+  seed-ensemble:
+    ord       acc=0.6950  macroF1=0.6651  recall=0.5888  auc=0.7018
+    crit      acc=0.6855  macroF1=0.6595  recall=0.6075  auc=0.7055
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_lab_input.csv  (11 rows)
+
+##############################################################################
+T2 LAB phase=encoder  2026-09-16 02:48:55  device=cuda amp=torch.bfloat16
+##############################################################################
+
+==============================================================================
+VARIANT H_deberta   backbone=deberta heads=['criteria', 'ordinal'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=nan val_macroF1(ord)=0.2500  <- best
+      ep2 loss=nan val_macroF1(ord)=0.2500
+      ep3 loss=nan val_macroF1(ord)=0.2500
+      ep4 loss=nan val_macroF1(ord)=0.2500
+      ep5 loss=nan val_macroF1(ord)=0.2500
+  !! H_deberta FAILED: ValueError: Input contains NaN.
+roject Phase\experiments_tier2\t2_lab.py", line 564, in main
+    all_rows += run_variant(seeds=seeds, **spec)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\experiments_tier2\t2_lab.py", line 439, in run_variant
+    auc = roc_auc_score(yt, st[key])
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\metrics\_ranking.py", line 710, in roc_auc_score
+    y_score = check_array(y_score, ensure_2d=False)
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input contains NaN.
+
+
+==============================================================================
+VARIANT I_modernbert   backbone=modernbert heads=['criteria', 'ordinal'] input=head max_len=2048 bs=2x4 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=0.6610 val_macroF1(ord)=0.5604  <- best
+      ep2 loss=0.6376 val_macroF1(ord)=0.5769  <- best
+      ep3 loss=0.6049 val_macroF1(ord)=0.5936  <- best
+      ep4 loss=0.5460 val_macroF1(ord)=0.4809
+      ep5 loss=0.4940 val_macroF1(ord)=0.4373
+  seed 1337
+
+##############################################################################
+T2 FINAL mode=confirm  2026-09-16 03:36:48
+##############################################################################
+  [BASE_binary] seed 42
+      ep1 loss=0.6879 val_macroF1(bin)=0.5246  <- best
+      ep2 loss=0.5992 val_macroF1(bin)=0.6035  <- best
+      ep3 loss=0.4442 val_macroF1(bin)=0.6166  <- best
+      ep4 loss=0.2774 val_macroF1(bin)=0.6039
+  [BASE_binary] seed 1337
+      ep1 loss=0.6707 val_macroF1(bin)=0.6074  <- best
+      ep2 loss=0.5880 val_macroF1(bin)=0.5947
+      ep3 loss=0.4509 val_macroF1(bin)=0.6022
+      ep4 loss=0.2958 val_macroF1(bin)=0.5944
+  [BASE_binary] seed 2024
+      ep1 loss=0.6852 val_macroF1(bin)=0.5104  <- best
+      ep2 loss=0.6029 val_macroF1(bin)=0.6187  <- best
+      ep3 loss=0.4542 val_macroF1(bin)=0.6011
+      ep4 loss=0.3209 val_macroF1(bin)=0.6155
+  [BASE_binary] seed 7
+      ep1 loss=0.6856 val_macroF1(bin)=0.5569  <- best
+      ep2 loss=0.6212 val_macroF1(bin)=0.6108  <- best
+      ep3 loss=0.4523 val_macroF1(bin)=0.5856
+      ep4 loss=0.2959 val_macroF1(bin)=0.5959
+  [BASE_binary] seed 99
+      ep1 loss=0.6822 val_macroF1(bin)=0.5626  <- best
+      ep2 loss=0.5776 val_macroF1(bin)=0.5728  <- best
+      ep3 loss=0.4422 val_macroF1(bin)=0.5984  <- best
+      ep4 loss=0.2948 val_macroF1(bin)=0.6040  <- best
+  [BASE_binary] seed 555
+      ep1 loss=0.6970 val_macroF1(bin)=0.5838  <- best
+      ep2 loss=0.6072 val_macroF1(bin)=0.5704
+      ep3 loss=0.4495 val_macroF1(bin)=0.5821
+      ep4 loss=0.2941 val_macroF1(bin)=0.5890  <- best
+  [BASE_binary] seed 31415
+      ep1 loss=0.6750 val_macroF1(bin)=0.4819  <- best
+      ep2 loss=0.5841 val_macroF1(bin)=0.5800  <- best
+      ep3 loss=0.4211 val_macroF1(bin)=0.5574
+      ep4 loss=0.2884 val_macroF1(bin)=0.5567
+  [BASE_binary] seed 2718
+      ep1 loss=0.6724 val_macroF1(bin)=0.6486  <- best
+      ep2 loss=0.6025 val_macroF1(bin)=0.5597
+      ep3 loss=0.4605 val_macroF1(bin)=0.5891
+      ep4 loss=0.3116 val_macroF1(bin)=0.6091
+  [BEST_ord_crit] seed 42
+      ep1 loss=0.6442 val_macroF1(ord)=0.5993  <- best
+      ep2 loss=0.6000 val_macroF1(ord)=0.6079  <- best
+      ep3 loss=0.5339 val_macroF1(ord)=0.5556
+      ep4 loss=0.4804 val_macroF1(ord)=0.5424
+      ep5 loss=0.4442 val_macroF1(ord)=0.5156
+  [BEST_ord_crit] seed 1337
+      ep1 loss=0.6493 val_macroF1(ord)=0.5377  <- best
+      ep2 loss=0.5996 val_macroF1(ord)=0.5469  <- best
+      ep3 loss=0.5405 val_macroF1(ord)=0.4885
+      ep4 loss=0.4894 val_macroF1(ord)=0.4493
+      ep5 loss=0.4563 val_macroF1(ord)=0.4635
+  [BEST_ord_crit] seed 2024
+      ep1 loss=0.6452 val_macroF1(ord)=0.4684  <- best
+      ep2 loss=0.6035 val_macroF1(ord)=0.5652  <- best
+      ep3 loss=0.5476 val_macroF1(ord)=0.5249
+      ep4 loss=0.4900 val_macroF1(ord)=0.4704
+      ep5 loss=0.4552 val_macroF1(ord)=0.5409
+  [BEST_ord_crit] seed 7
+      ep1 loss=0.6395 val_macroF1(ord)=0.4557  <- best
+      ep2 loss=0.5934 val_macroF1(ord)=0.6079  <- best
+      ep3 loss=0.5366 val_macroF1(ord)=0.4842
+      ep4 loss=0.4806 val_macroF1(ord)=0.5372
+      ep5 loss=0.4482 val_macroF1(ord)=0.4956
+  [BEST_ord_crit] seed 99
+      ep1 loss=0.6430 val_macroF1(ord)=0.3330  <- best
+      ep2 loss=0.6058 val_macroF1(ord)=0.5881  <- best
+      ep3 loss=0.5406 val_macroF1(ord)=0.5438
+      ep4 loss=0.4822 val_macroF1(ord)=0.5812
+      ep5 loss=0.4488 val_macroF1(ord)=0.5027
+  [BEST_ord_crit] seed 555
+      ep1 loss=0.6486 val_macroF1(ord)=0.2811  <- best
+      ep2 loss=0.6066 val_macroF1(ord)=0.3655  <- best
+      ep3 loss=0.5470 val_macroF1(ord)=0.5408  <- best
+      ep4 loss=0.4855 val_macroF1(ord)=0.4871
+      ep5 loss=0.4500 val_macroF1(ord)=0.4745
+  [BEST_ord_crit] seed 31415
+      ep1 loss=0.6422 val_macroF1(ord)=0.5994  <- best
+      ep2 loss=0.5911 val_macroF1(ord)=0.4854
+      ep3 loss=0.5269 val_macroF1(ord)=0.5402
+      ep4 loss=0.4736 val_macroF1(ord)=0.5055
+      ep5 loss=0.4411 val_macroF1(ord)=0.5283
+  [BEST_ord_crit] seed 2718
+      ep1 loss=0.6423 val_macroF1(ord)=0.4842  <- best
+      ep2 loss=0.5997 val_macroF1(ord)=0.5534  <- best
+      ep3 loss=0.5450 val_macroF1(ord)=0.5880  <- best
+      ep4 loss=0.4935 val_macroF1(ord)=0.5948  <- best
+      ep5 loss=0.4578 val_macroF1(ord)=0.5533
+
+============================================================================================
+CONFIRMATION RUN  n_seeds=8  (rate-matched threshold, base rate 0.335)
+============================================================================================
+config          score            macroF1 mean+-std      SE      acc   recall      AUC
+BASE_binary     bin                0.6582 +- 0.0243  0.0086   0.7036   0.5058   0.7009  n=8
+BEST_ord_crit   crit               0.6798 +- 0.0203  0.0072   0.7198   0.5444   0.7191  n=8
+BEST_ord_crit   crit_lr            0.6851 +- 0.0160  0.0057   0.7229   0.5596   0.7179  n=8
+BEST_ord_crit   crit_nodm          0.6812 +- 0.0173  0.0061   0.7209   0.5467   0.7173  n=8
+BEST_ord_crit   ord                0.6738 +- 0.0160  0.0057   0.7142   0.5397   0.7193  n=8
+  BEST/crit       vs BASE/bin : delta=+0.0216  Welch t=+1.93  p=0.0746
+  BEST/crit_lr    vs BASE/bin : delta=+0.0270  Welch t=+2.62  p=0.0221
+  BEST/crit_nodm  vs BASE/bin : delta=+0.0230  Welch t=+2.18  p=0.0486
+  BEST/ord        vs BASE/bin : delta=+0.0157  Welch t=+1.53  p=0.1525
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_confirm_seeds.csv
+
+##############################################################################
+T2 LAB phase=encoder  2026-09-16 04:26:32  device=cuda amp=torch.bfloat16
+##############################################################################
+
+==============================================================================
+VARIANT H_deberta   backbone=deberta heads=['criteria', 'ordinal'] input=head max_len=512 bs=4x2 lr=1e-05 epochs=5
+==============================================================================
+  seed 42
+  !! H_deberta FAILED: RuntimeError: expected mat1 and mat2 to have the same dtype, but got: struct c10::Half != float
+el = train_one(model, tr_ds, va_ds, yv, epochs, lr, bs, accum, name)
+  File "C:\Users\nihal\Desktop\Project Phase\experiments_tier2\t2_lab.py", line 303, in train_one
+    loss = model(**batch)["loss"]
+           ~~~~~^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\nihal\Desktop\Project Phase\experiments_tier2\t2_lab.py", line 231, in forward
+    ol = self.ord_dir(pooled) + self.ord_bias          # (B, K)
+         ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: struct c10::Half != float
+
+
+==============================================================================
+VARIANT J_biomedlarge   backbone=biomedlarge heads=['criteria', 'ordinal'] input=head max_len=512 bs=2x4 lr=1e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=0.6496 val_macroF1(ord)=0.4146  <- best
+      ep2 loss=0.6141 val_macroF1(ord)=0.5087  <- best
+      ep3 loss=0.5477 val_macroF1(ord)=0.4330
+      ep4 loss=0.4912 val_macroF1(ord)=0.4647
+      ep5 loss=0.4591 val_macroF1(ord)=0.5591  <- best
+  seed 1337
+
+##############################################################################
+T2 LAB phase=encoder  2026-09-16 05:02:29  device=cuda amp=torch.bfloat16
+##############################################################################
+
+==============================================================================
+VARIANT H_deberta   backbone=deberta heads=['criteria', 'ordinal'] input=head max_len=512 bs=4x2 lr=1e-05 epochs=5
+==============================================================================
+  seed 42
+      ep1 loss=0.6569 val_macroF1(ord)=0.6487  <- best
+
+##############################################################################
+T2 FINAL mode=final  2026-09-16 05:33:42
+##############################################################################
+  [FINAL] seed 42
+      ep1 loss=0.6446 val_macroF1(ord)=0.5805  <- best
+      ep2 loss=0.5997 val_macroF1(ord)=0.6079  <- best
+      ep3 loss=0.5280 val_macroF1(ord)=0.5737
+      ep4 loss=0.4749 val_macroF1(ord)=0.5526
+      ep5 loss=0.4414 val_macroF1(ord)=0.5187
+  [FINAL] seed 1337
+      ep1 loss=0.6507 val_macroF1(ord)=0.4712  <- best
+      ep2 loss=0.6008 val_macroF1(ord)=0.5376  <- best
+      ep3 loss=0.5412 val_macroF1(ord)=0.4900
+      ep4 loss=0.4888 val_macroF1(ord)=0.4720
+      ep5 loss=0.4553 val_macroF1(ord)=0.4468
+  [FINAL] seed 2024
+      ep1 loss=0.6448 val_macroF1(ord)=0.4704  <- best
+      ep2 loss=0.5996 val_macroF1(ord)=0.5503  <- best
+      ep3 loss=0.5457 val_macroF1(ord)=0.5052
+      ep4 loss=0.4855 val_macroF1(ord)=0.4900
+      ep5 loss=0.4526 val_macroF1(ord)=0.5250
+  [FINAL] seed 7
+      ep1 loss=0.6396 val_macroF1(ord)=0.4325  <- best
+      ep2 loss=0.5958 val_macroF1(ord)=0.6171  <- best
+      ep3 loss=0.5392 val_macroF1(ord)=0.4881
+      ep4 loss=0.4824 val_macroF1(ord)=0.5339
+      ep5 loss=0.4501 val_macroF1(ord)=0.4910
+  [FINAL] seed 99
+      ep1 loss=0.6440 val_macroF1(ord)=0.3304  <- best
+      ep2 loss=0.6064 val_macroF1(ord)=0.5909  <- best
+      ep3 loss=0.5377 val_macroF1(ord)=0.5175
+      ep4 loss=0.4801 val_macroF1(ord)=0.5304
+      ep5 loss=0.4479 val_macroF1(ord)=0.4833
+  ord        acc=0.7358 macroF1=0.6999 recall=0.5794 auc=0.7274
+  crit       acc=0.7327 macroF1=0.6971 recall=0.5794 auc=0.7331
+  crit_nodm  acc=0.7296 macroF1=0.6928 recall=0.5701 auc=0.7295
+  crit_lr    acc=0.7296 macroF1=0.6943 recall=0.5794 auc=0.7298
+
+per-criterion (rate-matched):
+        criterion   n  base_rate  pred_rate  threshold    f1   mcc   auc
+            costs 262      0.779      0.779      0.400 0.848 0.314 0.751
+         benefits 313      0.655      0.655      0.459 0.741 0.251 0.678
+            harms 294      0.677      0.677      0.426 0.774 0.300 0.724
+ evidence_quality 318      0.601      0.601      0.449 0.696 0.240 0.696
+disease_mongering 308      0.104      0.104      0.565 0.125 0.024 0.538
+ independent_srcs 233      0.489      0.489      0.446 0.588 0.193 0.600
+     alternatives 305      0.515      0.515      0.471 0.573 0.121 0.586
+     availability 272      0.254      0.254      0.509 0.348 0.126 0.610
+          novelty 306      0.304      0.304      0.537 0.441 0.197 0.650
+    press_release 216      0.120      0.120      0.472 0.423 0.344 0.731
+
+saved -> C:\Users\nihal\Desktop\Project Phase\models\tier2_final_v2
+
+################################################################################
+T2 TRANSFER  2026-09-16 08:15:24  device=cuda
+################################################################################
+
+================================================================================
+R1 - binary PubMedBERT on ReCOVery (publisher-disjoint splits)
+================================================================================
+  seed 42
+      ep1 loss=0.5482 val_macroF1(bin)=0.7693  <- best
+      ep2 loss=0.3087 val_macroF1(bin)=0.8331  <- best
+      ep3 loss=0.1694 val_macroF1(bin)=0.7996
+      ep4 loss=0.1086 val_macroF1(bin)=0.8867  <- best
+    acc=0.777 macroF1=0.752 recall=0.7143 auc=0.8537  (2.7 min)
+  seed 1337
+      ep1 loss=0.4998 val_macroF1(bin)=0.6337  <- best
+      ep2 loss=0.3053 val_macroF1(bin)=0.8531  <- best
+      ep3 loss=0.2022 val_macroF1(bin)=0.8735  <- best
+      ep4 loss=0.1205 val_macroF1(bin)=0.8885  <- best
+    acc=0.7213 macroF1=0.696 recall=0.6735 auc=0.8069  (2.9 min)
+  seed 2024
+      ep1 loss=0.5644 val_macroF1(bin)=0.7918  <- best
+      ep2 loss=0.2852 val_macroF1(bin)=0.6738
+      ep3 loss=0.1623 val_macroF1(bin)=0.8599  <- best
+      ep4 loss=0.0801 val_macroF1(bin)=0.8580
+    acc=0.7541 macroF1=0.7231 recall=0.6531 auc=0.8393  (2.7 min)
+  seed-ensemble  acc=0.7574 macroF1=0.7313 auc=0.8408
+
+  per-seed macroF1 0.7237 +- 0.0280   (TF-IDF reference 0.773, majority baseline 0.674)
+
+================================================================================
+R2 - zero-shot cross-domain transfer
+================================================================================
+  FakeHealth-v2 (ord) -> ReCOVery : acc=0.5279 macroF1=0.4939 auc=0.5039
+  FakeHealth-v2 (crit) -> ReCOVery : acc=0.5049 macroF1=0.46 auc=0.4864
+  (ReCOVery -> FakeHealth needs the R1 head, handled inside R1/R3)
+
+================================================================================
+R3 - ReCOVery -> FakeHealth intermediate-task transfer
+================================================================================
+  seed 42
+      (encoder initialised from the ReCOVery run)
+      ep1 loss=0.6615 val_macroF1(ord)=0.6062  <- best
+      ep2 loss=0.6221 val_macroF1(ord)=0.6595  <- best
+      ep3 loss=0.5617 val_macroF1(ord)=0.6057
+      ep4 loss=0.5126 val_macroF1(ord)=0.5547
+      ep5 loss=0.4802 val_macroF1(ord)=0.5724
+    ord=0.6663  crit=0.6836  crit_nodm=0.6642  crit_lr=0.6670
+  seed 1337
+      (encoder initialised from the ReCOVery run)
+      ep1 loss=0.6713 val_macroF1(ord)=0.3805  <- best
+      ep2 loss=0.6111 val_macroF1(ord)=0.5616  <- best
+      ep3 loss=0.5562 val_macroF1(ord)=0.4906
+      ep4 loss=0.5035 val_macroF1(ord)=0.4968
+      ep5 loss=0.4733 val_macroF1(ord)=0.5030
+    ord=0.6662  crit=0.6637  crit_nodm=0.6775  crit_lr=0.6730
+  seed 2024
+      (encoder initialised from the ReCOVery run)
+      ep1 loss=0.6532 val_macroF1(ord)=0.5470  <- best
+      ep2 loss=0.6022 val_macroF1(ord)=0.5728  <- best
+      ep3 loss=0.5554 val_macroF1(ord)=0.5732  <- best
+      ep4 loss=0.5025 val_macroF1(ord)=0.5248
+      ep5 loss=0.4664 val_macroF1(ord)=0.5438
+    ord=0.7013  crit=0.6984  crit_nodm=0.6941  crit_lr=0.6885
+
+  per-seed mean +- std (FakeHealth test, rate-matched):
+    crit       macroF1=0.6819 +- 0.0174  acc=0.7191  recall=0.5607  auc=0.7132
+    crit_lr    macroF1=0.6762 +- 0.0111  acc=0.7149  recall=0.5483  auc=0.7123
+    crit_nodm  macroF1=0.6786 +- 0.0150  acc=0.7159  recall=0.5576  auc=0.7101
+    ord        macroF1=0.6779 +- 0.0202  acc=0.7170  recall=0.5483  auc=0.7155
+
+  compare with the direct FakeHealth v2 confirmation run (outputs/tier2_confirm_seeds.csv): crit_lr 0.6851 +- 0.0160
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_transfer_results.csv
+
+################################################################################
+T2 CV  2026-09-16 08:35:52
+################################################################################
+pooled train+validation = 1801 articles (was 1483 train only, +21%)
+test = 318 articles, untouched. base rate 0.3348
+
+  fold 1/5   train 1440  held-out 361
+      ep1 loss=0.6518 val_macroF1(ord)=0.5396  <- best
+      ep2 loss=0.6125 val_macroF1(ord)=0.5908  <- best
+      ep3 loss=0.5497 val_macroF1(ord)=0.4509
+      ep4 loss=0.4902 val_macroF1(ord)=0.5564
+      ep5 loss=0.4565 val_macroF1(ord)=0.5399
+    fold done in 3.4 min
+
+  fold 2/5   train 1441  held-out 360
+      ep1 loss=0.6428 val_macroF1(ord)=0.6007  <- best
+      ep2 loss=0.6009 val_macroF1(ord)=0.5738
+      ep3 loss=0.5433 val_macroF1(ord)=0.5244
+      ep4 loss=0.4854 val_macroF1(ord)=0.5197
+      ep5 loss=0.4517 val_macroF1(ord)=0.5666
+    fold done in 3.3 min
+
+  fold 3/5   train 1441  held-out 360
+      ep1 loss=0.6536 val_macroF1(ord)=0.5661  <- best
+      ep2 loss=0.6052 val_macroF1(ord)=0.5023
+      ep3 loss=0.5413 val_macroF1(ord)=0.5384
+      ep4 loss=0.4877 val_macroF1(ord)=0.5191
+      ep5 loss=0.4527 val_macroF1(ord)=0.4968
+    fold done in 3.3 min
+
+  fold 4/5   train 1441  held-out 360
+      ep1 loss=0.6468 val_macroF1(ord)=0.4706  <- best
+      ep2 loss=0.5972 val_macroF1(ord)=0.5745  <- best
+      ep3 loss=0.5482 val_macroF1(ord)=0.4999
+      ep4 loss=0.4918 val_macroF1(ord)=0.5188
+      ep5 loss=0.4573 val_macroF1(ord)=0.5217
+    fold done in 3.3 min
+
+  fold 5/5   train 1441  held-out 360
+      ep1 loss=0.6450 val_macroF1(ord)=0.4097  <- best
+      ep2 loss=0.5999 val_macroF1(ord)=0.5781  <- best
+      ep3 loss=0.5409 val_macroF1(ord)=0.5527
+      ep4 loss=0.4803 val_macroF1(ord)=0.5155
+      ep5 loss=0.4483 val_macroF1(ord)=0.5331
+    fold done in 3.3 min
+
+====================================================================================
+CV ENSEMBLE ON TEST  (5 folds, trained on train+validation)
+====================================================================================
+  ord        acc=0.7138  macroF1=0.6803  recall=0.5794  auc=0.7091
+  crit       acc=0.7044  macroF1=0.6748  recall=0.5981  auc=0.7093
+  crit_nodm  acc=0.6981  macroF1=0.6705  recall=0.6075  auc=0.7082
+  crit_lr    acc=0.7170  macroF1=0.6859  recall=0.5981  auc=0.7133
+
+  reference, v2 trained on train only (8-seed mean, same rule):
+    crit_lr    acc=0.7229  macroF1=0.6851  recall=0.5596  auc=0.7179
+  reference, v2 5-seed ensemble (train only):
+    ord        acc=0.7358  macroF1=0.6999  recall=0.5794  auc=0.7274
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_cv_results.csv
+
+##############################################################################
+T2 ENSEMBLE  2026-09-27 11:28:14  seeds=[42, 1337, 2024, 7, 99]  -> C:\Users\nihal\Desktop\Project Phase\models\tier2_v2_ensemble
+##############################################################################
+  [ENSV2] seed 42
+      ep1 loss=0.6449 val_macroF1(ord)=0.5971  <- best
+      ep2 loss=0.5972 val_macroF1(ord)=0.6322  <- best
+      ep3 loss=0.5283 val_macroF1(ord)=0.5859
+      ep4 loss=0.4740 val_macroF1(ord)=0.5619
+      ep5 loss=0.4398 val_macroF1(ord)=0.5249
+    saved seed_42.pt  (3.77 min)
+  [ENSV2] seed 1337
+      ep1 loss=0.6501 val_macroF1(ord)=0.5178  <- best
+      ep2 loss=0.6010 val_macroF1(ord)=0.5685  <- best
+      ep3 loss=0.5430 val_macroF1(ord)=0.5075
+      ep4 loss=0.4932 val_macroF1(ord)=0.4272
+      ep5 loss=0.4565 val_macroF1(ord)=0.4628
+    saved seed_1337.pt  (3.75 min)
+  [ENSV2] seed 2024
+      ep1 loss=0.6455 val_macroF1(ord)=0.4660  <- best
+      ep2 loss=0.6022 val_macroF1(ord)=0.5796  <- best
+      ep3 loss=0.5491 val_macroF1(ord)=0.5186
+      ep4 loss=0.4934 val_macroF1(ord)=0.4881
+      ep5 loss=0.4585 val_macroF1(ord)=0.5314
+    saved seed_2024.pt  (3.65 min)
+  [ENSV2] seed 7
+      ep1 loss=0.6390 val_macroF1(ord)=0.4352  <- best
+      ep2 loss=0.5955 val_macroF1(ord)=0.6097  <- best
+      ep3 loss=0.5351 val_macroF1(ord)=0.5041
+      ep4 loss=0.4803 val_macroF1(ord)=0.5314
+      ep5 loss=0.4481 val_macroF1(ord)=0.4952
+    saved seed_7.pt  (3.51 min)
+  [ENSV2] seed 99
+      ep1 loss=0.6434 val_macroF1(ord)=0.3352  <- best
+      ep2 loss=0.6055 val_macroF1(ord)=0.6131  <- best
+      ep3 loss=0.5348 val_macroF1(ord)=0.5185
+      ep4 loss=0.4766 val_macroF1(ord)=0.5597
+      ep5 loss=0.4436 val_macroF1(ord)=0.4863
+    saved seed_99.pt  (3.5 min)
+  crit_lr    acc=0.7327 macroF1=0.6971 recall=0.5794 auc=0.7256   <- VERDICT RULE
+  ord        acc=0.7327 macroF1=0.6909 recall=0.5421 auc=0.7275
+  crit       acc=0.7358 macroF1=0.6999 recall=0.5794 auc=0.7292
+  crit_nodm  acc=0.7390 macroF1=0.7013 recall=0.5701 auc=0.7259
+  per-seed crit_lr macroF1 0.6861 +- 0.0113
+
+per-criterion on test (validation thresholds):
+        criterion   n  base_rate  pred_rate  threshold    f1   mcc   auc
+            costs 262      0.779      0.718      0.411 0.827 0.319 0.753
+         benefits 313      0.655      0.620      0.472 0.722 0.235 0.677
+            harms 294      0.677      0.616      0.442 0.742 0.276 0.717
+ evidence_quality 318      0.601      0.597      0.450 0.693 0.234 0.691
+disease_mongering 308      0.104      0.117      0.555 0.118 0.009 0.540
+ independent_srcs 233      0.489      0.343      0.464 0.505 0.178 0.602
+     alternatives 305      0.515      0.449      0.492 0.544 0.125 0.587
+     availability 272      0.254      0.261      0.507 0.357 0.134 0.610
+          novelty 306      0.304      0.278      0.530 0.438 0.209 0.649
+    press_release 216      0.120      0.102      0.574 0.458 0.393 0.726
+criteria macro-F1: val-threshold 0.5404   test-rate (old protocol) 0.5542
+
+saved -> C:\Users\nihal\Desktop\Project Phase\models\tier2_v2_ensemble

@@ -1,0 +1,127 @@
+{
+  "task": "Tier 2 v2 - article reporting quality (FakeHealth / HealthNewsReview)",
+  "verdict_model": "5-member PubMedBERT ensemble (ordinal CORAL + 10 criteria heads); verdict = composer over the ensemble's criteria (crit_lr)",
+  "criteria_model": "per-criterion blend of the ensemble's criteria probabilities and TF-IDF logistic regression",
+  "test": {
+    "accuracy": 0.7327,
+    "macro_f1": 0.6971,
+    "recall_not_credible": 0.5794,
+    "roc_auc": 0.7256,
+    "predicted_not_credible": 0.3208
+  },
+  "baselines_test": {
+    "v1 PubMedBERT binary": {
+      "accuracy": 0.6887,
+      "macro_f1": 0.6609,
+      "recall_not_credible": 0.5981,
+      "roc_auc": 0.7275,
+      "predicted_not_credible": 0.3774
+    },
+    "BERT-base binary": {
+      "accuracy": 0.6981,
+      "macro_f1": 0.5958,
+      "recall_not_credible": 0.2897,
+      "roc_auc": 0.6713,
+      "predicted_not_credible": 0.1604
+    },
+    "TF-IDF + LR, tuned on validation": {
+      "accuracy": 0.7013,
+      "macro_f1": 0.6581,
+      "recall_not_credible": 0.514,
+      "roc_auc": 0.7139,
+      "predicted_not_credible": 0.3082
+    },
+    "TF-IDF + LR, canonical": {
+      "accuracy": 0.7107,
+      "macro_f1": 0.6663,
+      "recall_not_credible": 0.514,
+      "roc_auc": 0.7268,
+      "predicted_not_credible": 0.2987
+    },
+    "majority class": {
+      "accuracy": 0.6635,
+      "macro_f1": 0.3989,
+      "recall_not_credible": 0.0,
+      "roc_auc": 0.5,
+      "predicted_not_credible": 0.0
+    }
+  },
+  "paired_bootstrap": {
+    "v2 vs v1": {
+      "delta": 0.0362,
+      "ci_low": -0.0107,
+      "ci_high": 0.0827,
+      "P(no gain)": 0.0688
+    },
+    "v2 vs BERT-base": {
+      "delta": 0.1013,
+      "ci_low": 0.0319,
+      "ci_high": 0.1703,
+      "P(no gain)": 0.0026
+    },
+    "v2 vs TF-IDF (tuned)": {
+      "delta": 0.039,
+      "ci_low": -0.0196,
+      "ci_high": 0.0972,
+      "P(no gain)": 0.0982
+    },
+    "v2 vs TF-IDF (canonical)": {
+      "delta": 0.0308,
+      "ci_low": -0.0254,
+      "ci_high": 0.0887,
+      "P(no gain)": 0.1504
+    }
+  },
+  "retraining_test": {
+    "n_seeds": 8,
+    "v1_mean": 0.6582,
+    "v2_mean": 0.6851,
+    "v2_std": 0.016,
+    "welch_p": 0.0221
+  },
+  "criteria": {
+    "v1": {
+      "criteria macro-F1": 0.527,
+      "mean AUC": 0.641,
+      "mean MCC": 0.193
+    },
+    "v2_heads": {
+      "criteria macro-F1": 0.54,
+      "mean AUC": 0.655,
+      "mean MCC": 0.211
+    },
+    "hybrid": {
+      "criteria macro-F1": 0.581,
+      "mean AUC": 0.688,
+      "mean MCC": 0.272
+    },
+    "hybrid_minus_v2_mean_auc": {
+      "delta": 0.0259,
+      "ci_low": 0.0131,
+      "ci_high": 0.0392,
+      "P(no gain)": 0.0
+    },
+    "decision_accuracy": {
+      "each criterion's usual outcome (constant)": 0.692,
+      "v2 criteria heads": 0.682,
+      "hybrid (shown)": 0.7096
+    }
+  },
+  "router": {
+    "correct": 5067,
+    "total": 5075
+  },
+  "explanations": {
+    "articles": 318,
+    "reviewer_pairs": 355,
+    "precision_at_3": 0.1296,
+    "chance_at_3": 0.0948,
+    "rank_auc": 0.5476,
+    "verdict_level_rank_auc": 0.5024,
+    "deletion_drop_neg": 0.0307,
+    "deletion_drop_pos": -0.0265,
+    "deletion_random": -0.0015,
+    "deletion_neg_beats_random": 0.7685,
+    "deletion_pos_beats_random": 0.7299
+  }
+}

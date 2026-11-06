@@ -1,0 +1,12 @@
+variant,backbone,heads,input,seed,score,threshold,train_minutes,roc_auc,accuracy,f1_macro,recall_notcred
+G_headtail,pubmedbert,criteria+ordinal,headtail,42,ord,0.52,3.8,0.7012,0.7075,0.6762,0.5888
+G_headtail,pubmedbert,criteria+ordinal,headtail,42,crit,0.49,3.8,0.702,0.695,0.6509,0.5047
+G_headtail,pubmedbert,criteria+ordinal,headtail,42,blend,0.51,3.8,0.7024,0.6855,0.6568,0.5888
+G_headtail,pubmedbert,criteria+ordinal,headtail,1337,ord,0.46,3.32,0.6899,0.6792,0.6471,0.5607
+G_headtail,pubmedbert,criteria+ordinal,headtail,1337,crit,0.51,3.32,0.6955,0.6635,0.6349,0.5701
+G_headtail,pubmedbert,criteria+ordinal,headtail,1337,blend,0.5,3.32,0.6923,0.6698,0.6389,0.5607
+G_headtail,pubmedbert,criteria+ordinal,headtail,2024,ord,0.43,3.33,0.6971,0.695,0.6664,0.5981
+G_headtail,pubmedbert,criteria+ordinal,headtail,2024,crit,0.47,3.33,0.6914,0.6792,0.6319,0.4766
+G_headtail,pubmedbert,criteria+ordinal,headtail,2024,blend,0.49,3.33,0.697,0.6887,0.6582,0.5794
+G_headtail,pubmedbert,criteria+ordinal,headtail,ENS,ord,0.49,,0.7018,0.695,0.6651,0.5888
+G_headtail,pubmedbert,criteria+ordinal,headtail,ENS,crit,0.52,,0.7055,0.6855,0.6595,0.6075

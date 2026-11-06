@@ -1,0 +1,57 @@
+id,capability,case,expected,actual,passed,score,rank
+A1,Well-reported articles,HealthStory_00550 (5/5) Pathway launches 'liquid biopsy' to find cancer in healthy p,Meets reporting standards,Meets reporting standards,True,0.5921,
+A2,Well-reported articles,HealthStory_00053 (5/5) Drugmakers Call Experimental Alzheimer’s Drug Study Outcome ,Meets reporting standards,Meets reporting standards,True,0.611,
+A3,Well-reported articles,HealthStory_01105 (5/5) Study Finds Low-Salt Diet Ineffective but Draws Criticism Fr,Meets reporting standards,Meets reporting standards,True,0.6575,
+A4,Well-reported articles,HealthStory_00460 (5/5) Do healthy people need an aspirin a day?,Meets reporting standards,Meets reporting standards,True,0.6497,
+A5,Well-reported articles,HealthStory_01423 (5/5) Pancreatic Chemo Comparison Finds No Survival Boost,Meets reporting standards,Meets reporting standards,True,0.6265,
+A6,Well-reported articles,HealthStory_00582 (5/5) 2 Studies Back Guidelines for Wider Use of Statins,Meets reporting standards,Meets reporting standards,True,0.6817,
+A7,Well-reported articles,HealthStory_00522 (5/5) How Sugar Affects the Body: New Study Looks Beyond Calories,Meets reporting standards,Meets reporting standards,True,0.6552,
+A8,Well-reported articles,HealthStory_00304 (5/5) Bystander CPR may boost survival odds when ambulance delayed,Meets reporting standards,Meets reporting standards,True,0.606,
+B1,Poorly reported articles,HealthRelease_00510 (1/5) New Data Establishes Image Guided Treatment Option for Prost,Falls short of reporting standards,Falls short of reporting standards,True,0.407,
+B2,Poorly reported articles,"HealthRelease_00466 (1/5) Two-year, EU-funded Study Reveals a Medical Food in the Form",Falls short of reporting standards,Falls short of reporting standards,True,0.3548,
+B3,Poorly reported articles,HealthRelease_00325 (1/5) Electro-acupuncture for disrupted sleep in women with breast,Falls short of reporting standards,Falls short of reporting standards,True,0.2705,
+B4,Poorly reported articles,HealthRelease_00312 (1/5) Light therapy effectively treats early prostate cancer,Falls short of reporting standards,Falls short of reporting standards,True,0.364,
+B5,Poorly reported articles,HealthStory_00382 (1/5) New Asthma Treatment: Pill Makes Huge Difference In Patients,Falls short of reporting standards,Falls short of reporting standards,True,0.2714,
+B6,Poorly reported articles,HealthStory_00871 (1/5) Egg producers fund study confirming the health benefits of e,Falls short of reporting standards,Falls short of reporting standards,True,0.355,
+B7,Poorly reported articles,HealthStory_01403 (1/5) Some appendicitis cases may not require 'emergency' surgery,Falls short of reporting standards,Falls short of reporting standards,True,0.3082,
+B8,Poorly reported articles,"HealthStory_01541 (1/5) In melanoma patients, immune therapy may boost survival",Falls short of reporting standards,Meets reporting standards,False,0.6641,
+C1,Criterion added,HealthStory_00014: add costs,"costs P(not met) falls >= 0.05, more than median",falls +0.049 (median +0.013; rank 1 of 10),False,,1.0
+C2,Criterion added,HealthStory_00014: add harms,"harms P(not met) falls >= 0.05, more than median",falls +0.046 (median +0.009; rank 1 of 10),False,,1.0
+C3,Criterion added,HealthStory_00014: add benefits,"benefits P(not met) falls >= 0.05, more than median",falls +0.030 (median +0.008; rank 1 of 10),False,,1.0
+C4,Criterion added,HealthStory_00014: add independent_srcs,"independent_srcs P(not met) falls >= 0.05, more than median",falls +0.026 (median +0.016; rank 3 of 10),False,,3.0
+C5,Criterion added,HealthStory_00014: add evidence_quality,"evidence_quality P(not met) falls >= 0.05, more than median",falls +0.026 (median +0.010; rank 1 of 10),False,,1.0
+C6,Criterion added,HealthStory_00014: add availability,"availability P(not met) falls >= 0.05, more than median",falls +0.018 (median +0.005; rank 1 of 10),False,,1.0
+C7,Criterion added,HealthStory_00014: add alternatives,"alternatives P(not met) falls >= 0.05, more than median",falls +0.013 (median +0.010; rank 3 of 10),False,,3.0
+C8,Criterion added,HealthStory_00014: add novelty,"novelty P(not met) falls >= 0.05, more than median",falls +0.013 (median +0.005; rank 1 of 10),False,,1.0
+C9,Criterion added,HealthStory_00989: add costs,"costs P(not met) falls >= 0.05, more than median",falls +0.134 (median +0.027; rank 1 of 10),True,,1.0
+C10,Criterion added,HealthStory_00989: add harms,"harms P(not met) falls >= 0.05, more than median",falls +0.081 (median +0.009; rank 1 of 10),True,,1.0
+C11,Criterion added,HealthStory_00989: add benefits,"benefits P(not met) falls >= 0.05, more than median",falls +0.031 (median +0.005; rank 2 of 10),False,,2.0
+C12,Criterion added,HealthStory_00989: add independent_srcs,"independent_srcs P(not met) falls >= 0.05, more than median",falls +0.043 (median +0.023; rank 3 of 10),False,,3.0
+C13,Criterion added,HealthStory_00989: add evidence_quality,"evidence_quality P(not met) falls >= 0.05, more than median",falls +0.036 (median +0.020; rank 2 of 10),False,,2.0
+C14,Criterion added,HealthStory_00989: add availability,"availability P(not met) falls >= 0.05, more than median",falls +0.016 (median +0.001; rank 2 of 10),False,,2.0
+C15,Criterion added,HealthStory_00989: add alternatives,"alternatives P(not met) falls >= 0.05, more than median",falls +0.010 (median +0.009; rank 4 of 10),False,,4.0
+C16,Criterion added,HealthStory_00989: add novelty,"novelty P(not met) falls >= 0.05, more than median",falls +0.001 (median -0.001; rank 2 of 10),False,,2.0
+D1,Criterion removed,HealthStory_00017: remove 2 costs sentence(s),costs P(not met) rises >= 0.05,rises +0.137,True,,
+D2,Criterion removed,HealthStory_01247: remove 2 costs sentence(s),costs P(not met) rises >= 0.05,rises +0.040,False,,
+D3,Criterion removed,HealthStory_00582: remove 3 harms sentence(s),harms P(not met) rises >= 0.05,rises +0.172,True,,
+D4,Criterion removed,HealthStory_01549: remove 2 harms sentence(s),harms P(not met) rises >= 0.05,rises -0.042,False,,
+D5,Criterion removed,HealthStory_01247: remove 2 harms sentence(s),harms P(not met) rises >= 0.05,rises -0.012,False,,
+E1,Sensational language,HealthStory_00550: insert hype,"score falls, sensational-language P(not met) rises","score -0.042, P(not met) +0.015",True,,
+E2,Sensational language,HealthStory_00053: insert hype,"score falls, sensational-language P(not met) rises","score -0.009, P(not met) -0.003",False,,
+E3,Sensational language,HealthStory_01105: insert hype,"score falls, sensational-language P(not met) rises","score +0.008, P(not met) -0.003",False,,
+F1,Caveats,HealthRelease_00510: insert caveats,score rises,score +0.011,True,,
+F2,Caveats,HealthRelease_00466: insert caveats,score rises,score +0.227,True,,
+F3,Caveats,HealthRelease_00325: insert caveats,score rises,score +0.012,True,,
+G1,Formatting invariance,HealthStory_00550: no line breaks,"same verdict, |change| < 0.05","Meets reporting standards, change +0.000",True,,
+G2,Formatting invariance,HealthStory_00550: no title,"same verdict, |change| < 0.05","Meets reporting standards, change -0.007",True,,
+G3,Formatting invariance,HealthStory_00053: no line breaks,"same verdict, |change| < 0.05","Meets reporting standards, change +0.000",True,,
+G4,Formatting invariance,HealthStory_00053: no title,"same verdict, |change| < 0.05","Meets reporting standards, change -0.007",True,,
+G5,Formatting invariance,HealthRelease_00510: no line breaks,"same verdict, |change| < 0.05","Falls short of reporting standards, change +0.000",True,,
+G6,Formatting invariance,HealthRelease_00510: no title,"same verdict, |change| < 0.05","Falls short of reporting standards, change -0.036",True,,
+G7,Formatting invariance,HealthRelease_00466: no line breaks,"same verdict, |change| < 0.05","Falls short of reporting standards, change +0.000",True,,
+G8,Formatting invariance,HealthRelease_00466: no title,"same verdict, |change| < 0.05","Falls short of reporting standards, change -0.044",True,,
+H1,Routing,8 words: Wearing face masks reduces the spread of COVID-19.,tier1,tier1,True,,
+H2,Routing,12 words: Dexamethasone reduces deaths among patients hospit,tier1,tier1,True,,
+H3,Routing,102 words: These measures can help to stop the spread of the ,tier1,tier2,False,,
+H4,Routing,773 words: Pathway launches 'liquid biopsy' to find cancer in,tier2,tier2,True,,
+H5,Routing,65 words: How to heal head injuries? Try new app. Master sai,tier2,tier2,True,,

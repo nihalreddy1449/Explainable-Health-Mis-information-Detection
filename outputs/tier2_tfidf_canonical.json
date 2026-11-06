@@ -1,0 +1,6 @@
+{
+  "accuracy": 0.7107,
+  "f1_macro": 0.6663,
+  "recall_notcred": 0.514,
+  "roc_auc": 0.7268
+}

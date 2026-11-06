@@ -1,0 +1,203 @@
+{
+  "n_cases": 56,
+  "n_passed": 35,
+  "pass_rate": 0.625,
+  "per_capability": [
+    {
+      "capability": "Well-reported articles",
+      "cases": 8,
+      "passed": 8
+    },
+    {
+      "capability": "Poorly reported articles",
+      "cases": 8,
+      "passed": 7
+    },
+    {
+      "capability": "Criterion added",
+      "cases": 16,
+      "passed": 2
+    },
+    {
+      "capability": "Criterion removed",
+      "cases": 5,
+      "passed": 2
+    },
+    {
+      "capability": "Sensational language",
+      "cases": 3,
+      "passed": 1
+    },
+    {
+      "capability": "Caveats",
+      "cases": 3,
+      "passed": 3
+    },
+    {
+      "capability": "Formatting invariance",
+      "cases": 8,
+      "passed": 8
+    },
+    {
+      "capability": "Routing",
+      "cases": 5,
+      "passed": 4
+    }
+  ],
+  "failures": [
+    {
+      "id": "B8",
+      "capability": "Poorly reported articles",
+      "case": "HealthStory_01541 (1/5) In melanoma patients, immune therapy may boost survival",
+      "expected": "Falls short of reporting standards",
+      "actual": "Meets reporting standards"
+    },
+    {
+      "id": "C1",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add costs",
+      "expected": "costs P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.049 (median +0.013; rank 1 of 10)"
+    },
+    {
+      "id": "C2",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add harms",
+      "expected": "harms P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.046 (median +0.009; rank 1 of 10)"
+    },
+    {
+      "id": "C3",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add benefits",
+      "expected": "benefits P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.030 (median +0.008; rank 1 of 10)"
+    },
+    {
+      "id": "C4",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add independent_srcs",
+      "expected": "independent_srcs P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.026 (median +0.016; rank 3 of 10)"
+    },
+    {
+      "id": "C5",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add evidence_quality",
+      "expected": "evidence_quality P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.026 (median +0.010; rank 1 of 10)"
+    },
+    {
+      "id": "C6",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add availability",
+      "expected": "availability P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.018 (median +0.005; rank 1 of 10)"
+    },
+    {
+      "id": "C7",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add alternatives",
+      "expected": "alternatives P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.013 (median +0.010; rank 3 of 10)"
+    },
+    {
+      "id": "C8",
+      "capability": "Criterion added",
+      "case": "HealthStory_00014: add novelty",
+      "expected": "novelty P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.013 (median +0.005; rank 1 of 10)"
+    },
+    {
+      "id": "C11",
+      "capability": "Criterion added",
+      "case": "HealthStory_00989: add benefits",
+      "expected": "benefits P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.031 (median +0.005; rank 2 of 10)"
+    },
+    {
+      "id": "C12",
+      "capability": "Criterion added",
+      "case": "HealthStory_00989: add independent_srcs",
+      "expected": "independent_srcs P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.043 (median +0.023; rank 3 of 10)"
+    },
+    {
+      "id": "C13",
+      "capability": "Criterion added",
+      "case": "HealthStory_00989: add evidence_quality",
+      "expected": "evidence_quality P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.036 (median +0.020; rank 2 of 10)"
+    },
+    {
+      "id": "C14",
+      "capability": "Criterion added",
+      "case": "HealthStory_00989: add availability",
+      "expected": "availability P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.016 (median +0.001; rank 2 of 10)"
+    },
+    {
+      "id": "C15",
+      "capability": "Criterion added",
+      "case": "HealthStory_00989: add alternatives",
+      "expected": "alternatives P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.010 (median +0.009; rank 4 of 10)"
+    },
+    {
+      "id": "C16",
+      "capability": "Criterion added",
+      "case": "HealthStory_00989: add novelty",
+      "expected": "novelty P(not met) falls >= 0.05, more than median",
+      "actual": "falls +0.001 (median -0.001; rank 2 of 10)"
+    },
+    {
+      "id": "D2",
+      "capability": "Criterion removed",
+      "case": "HealthStory_01247: remove 2 costs sentence(s)",
+      "expected": "costs P(not met) rises >= 0.05",
+      "actual": "rises +0.040"
+    },
+    {
+      "id": "D4",
+      "capability": "Criterion removed",
+      "case": "HealthStory_01549: remove 2 harms sentence(s)",
+      "expected": "harms P(not met) rises >= 0.05",
+      "actual": "rises -0.042"
+    },
+    {
+      "id": "D5",
+      "capability": "Criterion removed",
+      "case": "HealthStory_01247: remove 2 harms sentence(s)",
+      "expected": "harms P(not met) rises >= 0.05",
+      "actual": "rises -0.012"
+    },
+    {
+      "id": "E2",
+      "capability": "Sensational language",
+      "case": "HealthStory_00053: insert hype",
+      "expected": "score falls, sensational-language P(not met) rises",
+      "actual": "score -0.009, P(not met) -0.003"
+    },
+    {
+      "id": "E3",
+      "capability": "Sensational language",
+      "case": "HealthStory_01105: insert hype",
+      "expected": "score falls, sensational-language P(not met) rises",
+      "actual": "score +0.008, P(not met) -0.003"
+    },
+    {
+      "id": "H3",
+      "capability": "Routing",
+      "case": "102 words: These measures can help to stop the spread of the ",
+      "expected": "tier1",
+      "actual": "tier2"
+    }
+  ],
+  "criterion_added_rank": {
+    "cases": 16,
+    "rank_1": 8,
+    "rank_top3": 15
+  },
+  "note": "Real held-out articles chosen by seeded random draw; edits change one thing; pass rules fixed before the first run; failing cases kept.",
+  "runtime_seconds": 76.1
+}

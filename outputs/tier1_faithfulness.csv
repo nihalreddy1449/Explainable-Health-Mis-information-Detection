@@ -1,0 +1,26 @@
+claim,verdict,shap_in_rationale,chance_baseline,lift
+APOE4 expression in iPSC-derived neurons results in decreased tau phos,CONTRADICT,0.0,0.398,-0.398
+Active caspase-11 participate in regulating phagosome-lysosome fusion.,SUPPORT,0.286,0.208,0.077
+Adult tissue-resident macrophages are seeded before birth.,SUPPORT,0.444,0.31,0.134
+Adult tissue-resident macrophages are seeded before birth.,SUPPORT,0.222,0.167,0.056
+Adult tissue-resident macrophages are seeded before birth.,SUPPORT,0.444,0.31,0.134
+Adult tissue-resident macrophages are seeded before birth.,SUPPORT,0.222,0.167,0.056
+An M2-like phenotype in brown adipose tissue macrophages is quickly in,SUPPORT,0.0,0.179,-0.179
+Antimicrobial agents are less effective due to the pressure of antimic,SUPPORT,0.444,0.462,-0.017
+Bariatric surgery reduces postmenopausal breast cancer.,CONTRADICT,0.4,0.054,0.346
+COPI coatmer is involved in lipid homeostasis.,SUPPORT,1.0,0.398,0.602
+Ca2+ cycling is a UCP1-independent thermogenic mechanism.,SUPPORT,0.5,0.38,0.12
+Cancer cells can stimulate the accumulation of intra-tumoural myeloid-,SUPPORT,0.2,0.223,-0.023
+Cellular clocks are associated with mitosis timing in NIH 3T3 cells.,SUPPORT,0.556,0.261,0.295
+Clathrin stabilizes the spindle fiber apparatus during mitosis.,SUPPORT,0.625,0.529,0.096
+Commelina yellow mottle virus' (ComYMV) genome consists of 2140 baise ,CONTRADICT,0.222,0.144,0.078
+Cost effectiveness evaluations based on cRCT data lack external validi,SUPPORT,0.667,0.405,0.261
+Cyclin A2 destruction is necessary to switch from unstable to stable k,SUPPORT,0.429,0.25,0.179
+Differentiation of progenitor cells to myeloid cells is skewed when in,SUPPORT,0.111,0.208,-0.097
+Dscam1 acts as a hypervariable pattern-recognition receptor for the im,SUPPORT,0.857,0.53,0.327
+Egr3 regulates the homeostasis of B and T cells.,SUPPORT,1.0,0.818,0.182
+Elevated cell-free mitochondrial DNA levels are associated with mortal,SUPPORT,0.667,0.347,0.32
+Environmentally-induced senescence is mimicked in disease modeling by ,SUPPORT,1.0,0.7,0.3
+Foxk2 regulates autophagy genes in muscle cells and fibroblast cells.,SUPPORT,0.111,0.226,-0.115
+General exercise therapy is more effective than scapular stabilizer ex,CONTRADICT,0.0,0.366,-0.366
+Having a main partner improves HIV outcomes.,SUPPORT,1.0,0.379,0.621

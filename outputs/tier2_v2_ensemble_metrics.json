@@ -1,0 +1,217 @@
+{
+  "backbone": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+  "max_len": 512,
+  "heads": [
+    "criteria",
+    "ordinal"
+  ],
+  "epochs": 5,
+  "seeds": [
+    42,
+    1337,
+    2024,
+    7,
+    99
+  ],
+  "criteria": [
+    "costs",
+    "benefits",
+    "harms",
+    "evidence_quality",
+    "disease_mongering",
+    "independent_srcs",
+    "alternatives",
+    "availability",
+    "novelty",
+    "press_release"
+  ],
+  "ord_bin_k": 2,
+  "train_base_rate_not_credible": 0.3351314902225219,
+  "verdict_rule": "crit_lr",
+  "verdict_threshold": 0.4719,
+  "criteria_test": {
+    "costs": {
+      "f1": 0.827,
+      "mcc": 0.319,
+      "auc": 0.753
+    },
+    "benefits": {
+      "f1": 0.722,
+      "mcc": 0.235,
+      "auc": 0.677
+    },
+    "harms": {
+      "f1": 0.742,
+      "mcc": 0.276,
+      "auc": 0.717
+    },
+    "evidence_quality": {
+      "f1": 0.693,
+      "mcc": 0.234,
+      "auc": 0.691
+    },
+    "disease_mongering": {
+      "f1": 0.118,
+      "mcc": 0.009,
+      "auc": 0.54
+    },
+    "independent_srcs": {
+      "f1": 0.505,
+      "mcc": 0.178,
+      "auc": 0.602
+    },
+    "alternatives": {
+      "f1": 0.544,
+      "mcc": 0.125,
+      "auc": 0.587
+    },
+    "availability": {
+      "f1": 0.357,
+      "mcc": 0.134,
+      "auc": 0.61
+    },
+    "novelty": {
+      "f1": 0.438,
+      "mcc": 0.209,
+      "auc": 0.649
+    },
+    "press_release": {
+      "f1": 0.458,
+      "mcc": 0.393,
+      "auc": 0.726
+    }
+  },
+  "report": {
+    "crit_lr": {
+      "accuracy": 0.7327,
+      "f1_macro": 0.6971,
+      "recall_notcred": 0.5794,
+      "roc_auc": 0.7256,
+      "pred_notcred_rate": 0.3208,
+      "threshold": 0.4719
+    },
+    "ord": {
+      "accuracy": 0.7327,
+      "f1_macro": 0.6909,
+      "recall_notcred": 0.5421,
+      "roc_auc": 0.7275,
+      "pred_notcred_rate": 0.2956,
+      "threshold": 0.3585
+    },
+    "crit": {
+      "accuracy": 0.7358,
+      "f1_macro": 0.6999,
+      "recall_notcred": 0.5794,
+      "roc_auc": 0.7292,
+      "pred_notcred_rate": 0.3176,
+      "threshold": 0.4765
+    },
+    "crit_nodm": {
+      "accuracy": 0.739,
+      "f1_macro": 0.7013,
+      "recall_notcred": 0.5701,
+      "roc_auc": 0.7259,
+      "pred_notcred_rate": 0.3082,
+      "threshold": 0.4741
+    }
+  },
+  "per_seed_crit_lr": [
+    {
+      "seed": 42,
+      "accuracy": 0.7296,
+      "f1_macro": 0.6985,
+      "recall_notcred": 0.6075,
+      "roc_auc": 0.7266,
+      "pred_notcred_rate": 0.3428
+    },
+    {
+      "seed": 1337,
+      "accuracy": 0.7107,
+      "f1_macro": 0.6697,
+      "recall_notcred": 0.5327,
+      "roc_auc": 0.7111,
+      "pred_notcred_rate": 0.3113
+    },
+    {
+      "seed": 2024,
+      "accuracy": 0.7296,
+      "f1_macro": 0.6897,
+      "recall_notcred": 0.5514,
+      "roc_auc": 0.7246,
+      "pred_notcred_rate": 0.305
+    },
+    {
+      "seed": 7,
+      "accuracy": 0.7327,
+      "f1_macro": 0.6925,
+      "recall_notcred": 0.5514,
+      "roc_auc": 0.7254,
+      "pred_notcred_rate": 0.3019
+    },
+    {
+      "seed": 99,
+      "accuracy": 0.717,
+      "f1_macro": 0.6801,
+      "recall_notcred": 0.5607,
+      "roc_auc": 0.7036,
+      "pred_notcred_rate": 0.3239
+    }
+  ],
+  "criteria_macro_f1_val_thresholds": 0.5404,
+  "criteria_macro_f1_test_rate_thresholds": 0.5542,
+  "criteria_mean_mcc": 0.2112,
+  "history": {
+    "42": {
+      "minutes": 3.77,
+      "epochs": [
+        "ep1 loss=0.6449 val_macroF1(ord)=0.5971  <- best",
+        "ep2 loss=0.5972 val_macroF1(ord)=0.6322  <- best",
+        "ep3 loss=0.5283 val_macroF1(ord)=0.5859",
+        "ep4 loss=0.4740 val_macroF1(ord)=0.5619",
+        "ep5 loss=0.4398 val_macroF1(ord)=0.5249"
+      ]
+    },
+    "1337": {
+      "minutes": 3.75,
+      "epochs": [
+        "ep1 loss=0.6501 val_macroF1(ord)=0.5178  <- best",
+        "ep2 loss=0.6010 val_macroF1(ord)=0.5685  <- best",
+        "ep3 loss=0.5430 val_macroF1(ord)=0.5075",
+        "ep4 loss=0.4932 val_macroF1(ord)=0.4272",
+        "ep5 loss=0.4565 val_macroF1(ord)=0.4628"
+      ]
+    },
+    "2024": {
+      "minutes": 3.65,
+      "epochs": [
+        "ep1 loss=0.6455 val_macroF1(ord)=0.4660  <- best",
+        "ep2 loss=0.6022 val_macroF1(ord)=0.5796  <- best",
+        "ep3 loss=0.5491 val_macroF1(ord)=0.5186",
+        "ep4 loss=0.4934 val_macroF1(ord)=0.4881",
+        "ep5 loss=0.4585 val_macroF1(ord)=0.5314"
+      ]
+    },
+    "7": {
+      "minutes": 3.51,
+      "epochs": [
+        "ep1 loss=0.6390 val_macroF1(ord)=0.4352  <- best",
+        "ep2 loss=0.5955 val_macroF1(ord)=0.6097  <- best",
+        "ep3 loss=0.5351 val_macroF1(ord)=0.5041",
+        "ep4 loss=0.4803 val_macroF1(ord)=0.5314",
+        "ep5 loss=0.4481 val_macroF1(ord)=0.4952"
+      ]
+    },
+    "99": {
+      "minutes": 3.5,
+      "epochs": [
+        "ep1 loss=0.6434 val_macroF1(ord)=0.3352  <- best",
+        "ep2 loss=0.6055 val_macroF1(ord)=0.6131  <- best",
+        "ep3 loss=0.5348 val_macroF1(ord)=0.5185",
+        "ep4 loss=0.4766 val_macroF1(ord)=0.5597",
+        "ep5 loss=0.4436 val_macroF1(ord)=0.4863"
+      ]
+    }
+  },
+  "built": "2026-09-27 11:46:53",
+  "note": "Every member is saved (seed_<s>.pt). Scores are averaged across members; the verdict is the composer over the averaged criteria probabilities, thresholded at the validation quantile equal to the training base rate."
+}

@@ -1,0 +1,4 @@
+run,backbone,evidence,accuracy,f1_macro,f1_refuted,train_minutes
+tier1_pubmedbert_evidence,PubMedBERT,True,0.7441,0.7404,0.7076,
+tier1_pubmedbert_claim_only,PubMedBERT,False,0.5266,0.508,0.3918,
+tier1_bertbase_evidence,bert-base-uncased,True,0.7219,0.7121,0.6409,

@@ -1,0 +1,141 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+##############################################################################
+T2 ENSEMBLE  2026-09-27 11:28:14  seeds=[42, 1337, 2024, 7, 99]  -> C:\Users\nihal\Desktop\Project Phase\models\tier2_v2_ensemble
+##############################################################################
+  [ENSV2] seed 42
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27622.41it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.6449 val_macroF1(ord)=0.5971  <- best
+      ep2 loss=0.5972 val_macroF1(ord)=0.6322  <- best
+      ep3 loss=0.5283 val_macroF1(ord)=0.5859
+      ep4 loss=0.4740 val_macroF1(ord)=0.5619
+      ep5 loss=0.4398 val_macroF1(ord)=0.5249
+    saved seed_42.pt  (3.77 min)
+  [ENSV2] seed 1337
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 17687.73it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.6501 val_macroF1(ord)=0.5178  <- best
+      ep2 loss=0.6010 val_macroF1(ord)=0.5685  <- best
+      ep3 loss=0.5430 val_macroF1(ord)=0.5075
+      ep4 loss=0.4932 val_macroF1(ord)=0.4272
+      ep5 loss=0.4565 val_macroF1(ord)=0.4628
+    saved seed_1337.pt  (3.75 min)
+  [ENSV2] seed 2024
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13689.57it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.6455 val_macroF1(ord)=0.4660  <- best
+      ep2 loss=0.6022 val_macroF1(ord)=0.5796  <- best
+      ep3 loss=0.5491 val_macroF1(ord)=0.5186
+      ep4 loss=0.4934 val_macroF1(ord)=0.4881
+      ep5 loss=0.4585 val_macroF1(ord)=0.5314
+    saved seed_2024.pt  (3.65 min)
+  [ENSV2] seed 7
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 20833.85it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.6390 val_macroF1(ord)=0.4352  <- best
+      ep2 loss=0.5955 val_macroF1(ord)=0.6097  <- best
+      ep3 loss=0.5351 val_macroF1(ord)=0.5041
+      ep4 loss=0.4803 val_macroF1(ord)=0.5314
+      ep5 loss=0.4481 val_macroF1(ord)=0.4952
+    saved seed_7.pt  (3.51 min)
+  [ENSV2] seed 99
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 20426.47it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.6434 val_macroF1(ord)=0.3352  <- best
+      ep2 loss=0.6055 val_macroF1(ord)=0.6131  <- best
+      ep3 loss=0.5348 val_macroF1(ord)=0.5185
+      ep4 loss=0.4766 val_macroF1(ord)=0.5597
+      ep5 loss=0.4436 val_macroF1(ord)=0.4863
+    saved seed_99.pt  (3.5 min)
+  crit_lr    acc=0.7327 macroF1=0.6971 recall=0.5794 auc=0.7256   <- VERDICT RULE
+  ord        acc=0.7327 macroF1=0.6909 recall=0.5421 auc=0.7275
+  crit       acc=0.7358 macroF1=0.6999 recall=0.5794 auc=0.7292
+  crit_nodm  acc=0.7390 macroF1=0.7013 recall=0.5701 auc=0.7259
+  per-seed crit_lr macroF1 0.6861 +- 0.0113
+
+per-criterion on test (validation thresholds):
+        criterion   n  base_rate  pred_rate  threshold    f1   mcc   auc
+            costs 262      0.779      0.718      0.411 0.827 0.319 0.753
+         benefits 313      0.655      0.620      0.472 0.722 0.235 0.677
+            harms 294      0.677      0.616      0.442 0.742 0.276 0.717
+ evidence_quality 318      0.601      0.597      0.450 0.693 0.234 0.691
+disease_mongering 308      0.104      0.117      0.555 0.118 0.009 0.540
+ independent_srcs 233      0.489      0.343      0.464 0.505 0.178 0.602
+     alternatives 305      0.515      0.449      0.492 0.544 0.125 0.587
+     availability 272      0.254      0.261      0.507 0.357 0.134 0.610
+          novelty 306      0.304      0.278      0.530 0.438 0.209 0.649
+    press_release 216      0.120      0.102      0.574 0.458 0.393 0.726
+criteria macro-F1: val-threshold 0.5404   test-rate (old protocol) 0.5542
+
+saved -> C:\Users\nihal\Desktop\Project Phase\models\tier2_v2_ensemble

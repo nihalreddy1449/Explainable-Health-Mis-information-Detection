@@ -1,0 +1,48 @@
+{
+  "folds": 5,
+  "pool_size": 1801,
+  "train_only_size": 1483,
+  "base_rate": 0.3348139922265408,
+  "results": [
+    {
+      "exp": "CV_trainval",
+      "score": "ord",
+      "folds": 5,
+      "threshold": 0.4041,
+      "accuracy": 0.7138,
+      "f1_macro": 0.6803,
+      "recall_notcred": 0.5794,
+      "roc_auc": 0.7091
+    },
+    {
+      "exp": "CV_trainval",
+      "score": "crit",
+      "folds": 5,
+      "threshold": 0.4952,
+      "accuracy": 0.7044,
+      "f1_macro": 0.6748,
+      "recall_notcred": 0.5981,
+      "roc_auc": 0.7093
+    },
+    {
+      "exp": "CV_trainval",
+      "score": "crit_nodm",
+      "folds": 5,
+      "threshold": 0.4906,
+      "accuracy": 0.6981,
+      "f1_macro": 0.6705,
+      "recall_notcred": 0.6075,
+      "roc_auc": 0.7082
+    },
+    {
+      "exp": "CV_trainval",
+      "score": "crit_lr",
+      "folds": 5,
+      "threshold": 0.4851,
+      "accuracy": 0.717,
+      "f1_macro": 0.6859,
+      "recall_notcred": 0.5981,
+      "roc_auc": 0.7133
+    }
+  ]
+}

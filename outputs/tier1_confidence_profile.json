@@ -1,0 +1,7 @@
+{
+  "n_answered_test_claims": 257,
+  "share_above_0.99": 0.5019,
+  "share_0.90_to_0.99": 0.323,
+  "share_below_0.90": 0.1751,
+  "note": "Confidence of the top verdict over every held-out test claim the system answered (claims of 6-30 words, abstentions excluded). Shows the model is not uniformly confident: it spreads probability on contested claims."
+}

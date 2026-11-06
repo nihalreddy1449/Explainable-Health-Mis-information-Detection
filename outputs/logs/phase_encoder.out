@@ -1,0 +1,98 @@
+
+##############################################################################
+T2 LAB phase=encoder  2026-09-16 02:48:55  device=cuda amp=torch.bfloat16
+##############################################################################
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+==============================================================================
+VARIANT H_deberta   backbone=deberta heads=['criteria', 'ordinal'] input=head max_len=512 bs=8x1 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 55302.14it/s]
+[transformers] [1mDebertaV2Model LOAD REPORT[0m from: microsoft/deberta-v3-base
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=nan val_macroF1(ord)=0.2500  <- best
+      ep2 loss=nan val_macroF1(ord)=0.2500
+      ep3 loss=nan val_macroF1(ord)=0.2500
+      ep4 loss=nan val_macroF1(ord)=0.2500
+      ep5 loss=nan val_macroF1(ord)=0.2500
+  !! H_deberta FAILED: ValueError: Input contains NaN.
+roject Phase\experiments_tier2\t2_lab.py", line 564, in main
+    all_rows += run_variant(seeds=seeds, **spec)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\experiments_tier2\t2_lab.py", line 439, in run_variant
+    auc = roc_auc_score(yt, st[key])
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\metrics\_ranking.py", line 710, in roc_auc_score
+    y_score = check_array(y_score, ensure_2d=False)
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input contains NaN.
+
+
+==============================================================================
+VARIANT I_modernbert   backbone=modernbert heads=['criteria', 'ordinal'] input=head max_len=2048 bs=2x4 lr=2e-05 epochs=5
+==============================================================================
+  seed 42
+Loading weights:   0%|          | 0/134 [00:00<?, ?it/s]Loading weights: 100%|██████████| 134/134 [00:00<00:00, 8609.50it/s]
+[transformers] [1mModernBertModel LOAD REPORT[0m from: answerdotai/ModernBERT-base
+Key               | Status     |  | 
+------------------+------------+--+-
+head.norm.weight  | UNEXPECTED |  | 
+head.dense.weight | UNEXPECTED |  | 
+decoder.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.6610 val_macroF1(ord)=0.5604  <- best
+      ep2 loss=0.6376 val_macroF1(ord)=0.5769  <- best
+      ep3 loss=0.6049 val_macroF1(ord)=0.5936  <- best
+      ep4 loss=0.5460 val_macroF1(ord)=0.4809
+      ep5 loss=0.4940 val_macroF1(ord)=0.4373
+  seed 1337
+Loading weights:   0%|          | 0/134 [00:00<?, ?it/s]Loading weights: 100%|██████████| 134/134 [00:00<00:00, 14010.29it/s]
+[transformers] [1mModernBertModel LOAD REPORT[0m from: answerdotai/ModernBERT-base
+Key               | Status     |  | 
+------------------+------------+--+-
+head.norm.weight  | UNEXPECTED |  | 
+head.dense.weight | UNEXPECTED |  | 
+decoder.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.

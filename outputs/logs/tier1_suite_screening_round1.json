@@ -1,0 +1,830 @@
+[
+ {
+  "cat": "A",
+  "claim": "Wearing face masks reduces the spread of COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9984127283096313,
+  "sim": 0.7482885718345642,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "face",
+   "masks",
+   "spread",
+   "wearing"
+  ],
+  "top": "Depending on the region we analyse, we find that face masks reduced the cumulative number of registered Covid-19 cases between 2.3% and 13% over a period of 10 days after they became compulsory. Assessing the credibility of the various estimates, we conclude t"
+ },
+ {
+  "cat": "A",
+  "claim": "Dexamethasone reduces deaths in patients with severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9979289770126343,
+  "sim": 0.717433750629425,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "deaths",
+   "dexamethasone",
+   "severe"
+  ],
+  "top": "In June 2020, a large randomised controlled clinical trial in the UK found that dexamethasone was effective in reducing the number of deaths in patients with severe coronavirus disease 2019 (COVID-19)."
+ },
+ {
+  "cat": "A",
+  "claim": "Washing hands with soap helps prevent COVID-19 infection.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.997140645980835,
+  "sim": 0.7670943140983582,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "hands",
+   "soap",
+   "washing"
+  ],
+  "top": "Among the basic protective measures against COVID-19, the need to wash hands frequently and in a prolonged way using soap, and to regularly use alcohol-based hand sanitizers is well established for the whole population."
+ },
+ {
+  "cat": "A",
+  "claim": "Older adults are at higher risk of severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "NEI",
+  "conf": 0.7350748181343079,
+  "sim": 0.6668972373008728,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "higher",
+   "risk",
+   "severe"
+  ],
+  "top": "the greater susceptibility of individuals with underlying cardiovascular conditions to develop more severe Covid-19 with higher mortality rate is likely to be confounded, in part, by age and the type of co-morbidities. Patients with heart failure or chronic ki"
+ },
+ {
+  "cat": "A",
+  "claim": "Social distancing slows the spread of the coronavirus.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9973141551017761,
+  "sim": 0.7700160145759583,
+  "pass": true,
+  "overlap": [
+   "distancing",
+   "social",
+   "spread"
+  ],
+  "top": "we do not find significant evidence that social distancing has resulted in a reduction in the number of daily confirmed cases. Instead, social distancing has merely stabilized the spread of the disease."
+ },
+ {
+  "cat": "A",
+  "claim": "COVID-19 can spread from people who have no symptoms.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9428259134292603,
+  "sim": 0.7299383878707886,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "have",
+   "spread",
+   "symptoms",
+   "who"
+  ],
+  "top": "Since COVID-19 spread all over the world becoming a pandemic illness, researchers have better characterized route of virus transmissibility and clinical signs and symptoms of the disease."
+ },
+ {
+  "cat": "A",
+  "claim": "People with diabetes are at higher risk of severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9972122311592102,
+  "sim": 0.6952329874038696,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "diabetes",
+   "higher",
+   "risk",
+   "severe"
+  ],
+  "top": "COVID-19 patients with diabetes were more likely to develop severe or critical disease conditions with more complications, and had higher incidence rates of antibiotic therapy, non-invasive and invasive mechanical ventilation, and death"
+ },
+ {
+  "cat": "A",
+  "claim": "COVID-19 vaccines reduce the risk of severe illness.",
+  "expected": "SUPPORTED",
+  "got": "NEI",
+  "conf": 0.7276800870895386,
+  "sim": 0.6745403409004211,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "illness",
+   "risk",
+   "severe"
+  ],
+  "top": "COVID-19 infection may be associated with severe disease in childhood presenting to a specialist hospital, but does not appear significantly different in severity to other causes of similar clinical presentations. In children presenting with pre-existing COVID"
+ },
+ {
+  "cat": "A",
+  "claim": "The coronavirus can survive on surfaces such as plastic and steel.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9939717650413513,
+  "sim": 0.6371169090270996,
+  "pass": true,
+  "overlap": [
+   "such",
+   "surfaces",
+   "survive"
+  ],
+  "top": "The most common coronaviruses may well survive or persist on surfaces for up to one month."
+ },
+ {
+  "cat": "A",
+  "claim": "Remdesivir shortens recovery time in hospitalised COVID-19 patients.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9847688674926758,
+  "sim": 0.6182042956352234,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "recovery",
+   "remdesivir",
+   "time"
+  ],
+  "top": "remdesivir has a modest yet significant reduction in mortality and significantly improves the time to recovery"
+ },
+ {
+  "cat": "A",
+  "claim": "Loss of smell is a symptom of COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9982142448425293,
+  "sim": 0.7365014553070068,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "smell",
+   "symptom"
+  ],
+  "top": "Quantitative smell testing demonstrates that decreased smell function, but not always anosmia, is a major marker for SARS-CoV-2 infection and suggests the possibility that smell testing may help, in some cases, to identify COVID-19 patients in need of early tr"
+ },
+ {
+  "cat": "A",
+  "claim": "Obesity increases the risk of severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "REFUTED",
+  "conf": 0.8608350157737732,
+  "sim": 0.7376539707183838,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "obesity",
+   "risk",
+   "severe"
+  ],
+  "top": "COVID-19 infection may be associated with severe disease in childhood presenting to a specialist hospital, but does not appear significantly different in severity to other causes of similar clinical presentations. In children presenting with pre-existing COVID"
+ },
+ {
+  "cat": "B",
+  "claim": "Eating garlic prevents infection with the coronavirus.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5681614875793457,
+  "pass": false,
+  "overlap": [
+   "eating",
+   "garlic",
+   "infection"
+  ],
+  "top": "51% will drink ginger with honey and 42.7% eat garlic for infection prevention."
+ },
+ {
+  "cat": "B",
+  "claim": "Drinking hot water kills the coronavirus.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5273128151893616,
+  "pass": false,
+  "overlap": [
+   "coronavirus",
+   "water"
+  ],
+  "top": "Water, sanitation, and hygiene (WASH) interventions remain to be important in the prevention of further spread of coronavirus disease-2019 (COVID-19)."
+ },
+ {
+  "cat": "B",
+  "claim": "5G mobile networks spread COVID-19.",
+  "expected": "REFUTED",
+  "got": "SUPPORTED",
+  "conf": 0.6790797114372253,
+  "sim": 0.6486825942993164,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "mobile",
+   "spread"
+  ],
+  "top": "Findings revealed that belief in 5G COVID-19 conspiracy theories was positively correlated with state anger, which in turn, was associated with a greater justification of real-life and hypothetical violence in response to an alleged link between 5G mobile tech"
+ },
+ {
+  "cat": "B",
+  "claim": "Hydroxychloroquine cures COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9979958534240723,
+  "sim": 0.614791750907898,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "hydroxychloroquine"
+  ],
+  "top": "Despite its small sample size our survey shows that hydroxychloroquine treatment is significantly associated with viral load reduction/disappearance in COVID-19 patients and its effect is reinforced by azithromycin."
+ },
+ {
+  "cat": "B",
+  "claim": "Taking a hot bath prevents COVID-19.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5891199707984924,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "taking"
+  ],
+  "top": "It also highlights the relationships between animal, human, and environmental health, as well as the importance of taking a collaborative transdisciplinary One Health approach to help prevent future COVID-19 outbreaks."
+ },
+ {
+  "cat": "B",
+  "claim": "Drinking alcohol protects you against COVID-19.",
+  "expected": "REFUTED",
+  "got": "SUPPORTED",
+  "conf": 0.9975520968437195,
+  "sim": 0.6321475505828857,
+  "pass": false,
+  "overlap": [
+   "alcohol",
+   "covid"
+  ],
+  "top": "The lockdown declared to prevent the spread of Covid 19 in India created unforeseen problems, including severe alcohol withdrawal symptoms and the need to manage them."
+ },
+ {
+  "cat": "B",
+  "claim": "Antibiotics are effective in treating COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9935358762741089,
+  "sim": 0.6410237550735474,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "effective",
+   "treating"
+  ],
+  "top": "Our study reports the promising effectiveness of favipiravir for treating COVID-19 patients."
+ },
+ {
+  "cat": "B",
+  "claim": "The coronavirus cannot be transmitted in hot and humid climates.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9922818541526794,
+  "sim": 0.6957471370697021,
+  "pass": true,
+  "overlap": [
+   "coronavirus",
+   "transmitted"
+  ],
+  "top": "A novel coronavirus emerged in human populations and spread rapidly to cause the global coronavirus disease 2019 pandemic."
+ },
+ {
+  "cat": "B",
+  "claim": "Mosquito bites can transmit the coronavirus.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9965226650238037,
+  "sim": 0.6161701679229736,
+  "pass": true,
+  "overlap": [
+   "coronavirus",
+   "transmit"
+  ],
+  "top": "ferrets and cats are highly susceptible to SARS-CoV-2 as infected by virus inoculation and can transmit the virus directly or indirectly by droplets or airborne routes."
+ },
+ {
+  "cat": "B",
+  "claim": "Spraying bleach on your body kills the coronavirus.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5380969047546387,
+  "pass": false,
+  "overlap": [
+   "body",
+   "coronavirus"
+  ],
+  "top": "The importance of engaging in any type of physical activity regularly, for both physical and mental health, is well established, and may be particularly beneficial in protecting the body and limiting the damage caused by the coronavirus disease 2019 (COVID-19)"
+ },
+ {
+  "cat": "B",
+  "claim": "Children cannot catch COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9970561265945435,
+  "sim": 0.6636362671852112,
+  "pass": true,
+  "overlap": [
+   "children",
+   "covid"
+  ],
+  "top": "Children of all ages can get COVID-19, although they appear to be affected less frequently than adults, as reported in our preliminary survey."
+ },
+ {
+  "cat": "B",
+  "claim": "Vitamin C cures COVID-19.",
+  "expected": "REFUTED",
+  "got": "NEI",
+  "conf": 0.9809819459915161,
+  "sim": 0.6489048600196838,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "vitamin"
+  ],
+  "top": "A principal defence against uncontrolled inflammation, and against viral infection in general, is provided by T regulatory lymphocytes (Tregs). Treg levels have been reported to be low in many COVID-19 patients and can be increased by vitamin D supplementation"
+ },
+ {
+  "cat": "B",
+  "claim": "Drinking vinegar protects you from the coronavirus.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5179693698883057,
+  "pass": false,
+  "overlap": [
+   "coronavirus",
+   "protects",
+   "vinegar"
+  ],
+  "top": "To date, understanding whether acquired immunity and presence of anti SARSCov2 antibodies protects against reinfection is one the most important focus of the scientific community"
+ },
+ {
+  "cat": "B",
+  "claim": "Cold weather and snow can kill the coronavirus.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.985619306564331,
+  "sim": 0.6183272004127502,
+  "pass": true,
+  "overlap": [
+   "cold",
+   "weather"
+  ],
+  "top": "Coronaviruses (CoVs) are a large family of viruses that cause disorders ranging from a mild cold to severe disease."
+ },
+ {
+  "cat": "C",
+  "claim": "Masks reduce transmission of COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.997191846370697,
+  "sim": 0.7047116160392761,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "masks",
+   "reduce",
+   "transmission"
+  ],
+  "top": "Model simulations, using data relevant to COVID-19 dynamics in the US states of New York and Washington, suggest that broad adoption of even relatively ineffective face masks may meaningfully reduce community transmission of COVID-19 and decrease peak hospital"
+ },
+ {
+  "cat": "C",
+  "claim": "Masks do not reduce transmission of COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9404478669166565,
+  "sim": 0.6650985479354858,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "masks",
+   "reduce",
+   "transmission"
+  ],
+  "top": "Model simulations, using data relevant to COVID-19 dynamics in the US states of New York and Washington, suggest that broad adoption of even relatively ineffective face masks may meaningfully reduce community transmission of COVID-19 and decrease peak hospital"
+ },
+ {
+  "cat": "C",
+  "claim": "Hand washing helps prevent COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9981714487075806,
+  "sim": 0.741936445236206,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "hand",
+   "prevent",
+   "washing"
+  ],
+  "top": "When hand washing with soap and water is unavailable, a sufficient volume of sanitizer is necessary to ensure complete hand coverage, and compliance is critical for appropriate hand hygiene."
+ },
+ {
+  "cat": "C",
+  "claim": "Hand washing does not help prevent COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9526454210281372,
+  "sim": 0.6424267292022705,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "hand",
+   "prevent",
+   "washing"
+  ],
+  "top": "When hand washing with soap and water is unavailable, a sufficient volume of sanitizer is necessary to ensure complete hand coverage, and compliance is critical for appropriate hand hygiene."
+ },
+ {
+  "cat": "C",
+  "claim": "Garlic protects against COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9887729287147522,
+  "sim": 0.612248420715332,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "garlic"
+  ],
+  "top": "BCG might provide the protection against COVID-19, with consequent less COVID-19 infection and deaths and more rapid recovery."
+ },
+ {
+  "cat": "C",
+  "claim": "Garlic does not protect against COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5813115835189819,
+  "pass": false,
+  "overlap": [
+   "covid"
+  ],
+  "top": "The available evidence suggests that CQ or HCQ does not improve clinical outcomes in COVID-19."
+ },
+ {
+  "cat": "C",
+  "claim": "Antibiotics work against the coronavirus.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5803796648979187,
+  "pass": false,
+  "overlap": [
+   "antibiotics",
+   "coronavirus"
+  ],
+  "top": "Various semisynthetic derivatives of glycopeptide antibiotics including vancomycin, eremomycin, teicoplanin, ristocetin A and DA-40926 have been evaluated for their inhibitory activity against feline infectious peritonitis virus (FIPV) and human (SARS-CoV, Fra"
+ },
+ {
+  "cat": "C",
+  "claim": "Antibiotics do not work against the coronavirus.",
+  "expected": "SUPPORTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5453765988349915,
+  "pass": false,
+  "overlap": [
+   "coronavirus"
+  ],
+  "top": "Currently, there is still no licensed specific antiviral treatment for the human coronavirus disease and a vaccine will not be ready soon."
+ },
+ {
+  "cat": "C",
+  "claim": "Children can get infected with COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9977446794509888,
+  "sim": 0.7042441368103027,
+  "pass": true,
+  "overlap": [
+   "children",
+   "covid",
+   "get"
+  ],
+  "top": "The numbers of children with COVID-19 pneumonia infection are small, and most of them come from family aggregation. Symptoms are mainly mild or even asymptomatic, which allow children to be a risk factor for transmission."
+ },
+ {
+  "cat": "C",
+  "claim": "Children cannot get infected with COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9980921149253845,
+  "sim": 0.7111114263534546,
+  "pass": true,
+  "overlap": [
+   "children",
+   "covid",
+   "get"
+  ],
+  "top": "Children of all ages can get COVID-19, although they appear to be affected less frequently than adults, as reported in our preliminary survey."
+ },
+ {
+  "cat": "C",
+  "claim": "Hydroxychloroquine improves survival in COVID-19 patients.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.998106837272644,
+  "sim": 0.7747712731361389,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "hydroxychloroquine"
+  ],
+  "top": "the use of hydroxychloroquine alone was associated with increased mortality in COVID-19 patients."
+ },
+ {
+  "cat": "C",
+  "claim": "Hydroxychloroquine does not improve survival in COVID-19 patients.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9974608421325684,
+  "sim": 0.7683623433113098,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "hydroxychloroquine",
+   "improve"
+  ],
+  "top": "the use of hydroxychloroquine alone was associated with increased mortality in COVID-19 patients."
+ },
+ {
+  "cat": "C",
+  "claim": "5G networks spread the coronavirus.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.944246768951416,
+  "sim": 0.6002671122550964,
+  "pass": true,
+  "overlap": [
+   "coronavirus",
+   "spread"
+  ],
+  "top": "A novel coronavirus emerged in human populations and spread rapidly to cause the global coronavirus disease 2019 pandemic."
+ },
+ {
+  "cat": "C",
+  "claim": "5G networks do not spread the coronavirus.",
+  "expected": "SUPPORTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5248520374298096,
+  "pass": false,
+  "overlap": [
+   "coronavirus",
+   "spread"
+  ],
+  "top": "a popular theory has linked 5G to the spread of COVID-19"
+ },
+ {
+  "cat": "D",
+  "claim": "Face coverings lower the risk of spreading the virus.",
+  "expected": "SUPPORTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5400550961494446,
+  "pass": false,
+  "overlap": [
+   "face",
+   "risk",
+   "virus"
+  ],
+  "top": "Face masks are an avenue to curb the spread of coronavirus, but few people in Western societies wear face masks."
+ },
+ {
+  "cat": "D",
+  "claim": "Using a mask cuts down coronavirus transmission.",
+  "expected": "SUPPORTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5913184881210327,
+  "pass": false,
+  "overlap": [
+   "coronavirus",
+   "mask",
+   "transmission"
+  ],
+  "top": "This study 1) illustrates transmission routes of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2); 2) addresses controversies surrounding the mask from perspectives of attitude, effectiveness, and necessity of wearing the mask with evidence that th"
+ },
+ {
+  "cat": "D",
+  "claim": "HCQ is not an effective treatment for COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9972894191741943,
+  "sim": 0.7391579151153564,
+  "pass": true,
+  "overlap": [
+   "covid",
+   "effective",
+   "hcq",
+   "treatment"
+  ],
+  "top": "The available evidence suggests that CQ or HCQ does not improve clinical outcomes in COVID-19."
+ },
+ {
+  "cat": "D",
+  "claim": "i heard eating garlic stops you getting covid",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5573356747627258,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "eating",
+   "garlic",
+   "getting"
+  ],
+  "top": "Hoaxes (such as eating garlic or citrus to prevent COVID-19) were detected in 15 videos (10.9%)."
+ },
+ {
+  "cat": "D",
+  "claim": "Does drinking hot water kill the coronavirus? Yes.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.4924812614917755,
+  "pass": false,
+  "overlap": [
+   "coronavirus",
+   "water"
+  ],
+  "top": "Water, sanitation, and hygiene (WASH) interventions remain to be important in the prevention of further spread of coronavirus disease-2019 (COVID-19)."
+ },
+ {
+  "cat": "D",
+  "claim": "Keeping a distance from other people lowers the chance of catching COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "REFUTED",
+  "conf": 0.9293263554573059,
+  "sim": 0.6270889043807983,
+  "pass": false,
+  "overlap": [
+   "covid"
+  ],
+  "top": "The evidence confirms COVID-19 transmission from people who were asymptomatic at the time."
+ },
+ {
+  "cat": "D",
+  "claim": "Steroids like dexamethasone save lives in critically ill COVID-19 patients.",
+  "expected": "SUPPORTED",
+  "got": "REFUTED",
+  "conf": 0.9600623250007629,
+  "sim": 0.679398238658905,
+  "pass": false,
+  "overlap": [
+   "covid",
+   "critically",
+   "dexamethasone",
+   "ill",
+   "lives"
+  ],
+  "top": "HCQ should be prescribed as a part of treatment for critically ill COVID-19 patients, with possible outcome of saving lives."
+ },
+ {
+  "cat": "E",
+  "claim": "Refined oils are bad for our health.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.4886586666107178,
+  "pass": true,
+  "overlap": [
+   "bad",
+   "health",
+   "oils",
+   "our"
+  ],
+  "top": "Lignans like podophyllotoxin and bicyclol show strong antiviral activities against different viruses, and essential oils can directly interact with viral membranes and reduce the hosts inflammatory responses (e.g., 1,8-cineol). Echinacea extracts stimulate the"
+ },
+ {
+  "cat": "E",
+  "claim": "The Eiffel Tower is located in Paris.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.3544803857803345,
+  "pass": true,
+  "overlap": [
+   "located"
+  ],
+  "top": "The 5TMM series: a useful in vivo mouse model of human multiple myeloma.. The present invention provides a combination sink and dishwashing apparatus having a sink sharing a common side wall with a cabinet which defines a closed space. The cabinet has a wire b"
+ },
+ {
+  "cat": "E",
+  "claim": "Eating carrots improves night vision.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.37672367691993713,
+  "pass": true,
+  "overlap": [
+   "eating",
+   "vision"
+  ],
+  "top": "Hoaxes (such as eating garlic or citrus to prevent COVID-19) were detected in 15 videos (10.9%)."
+ },
+ {
+  "cat": "E",
+  "claim": "Sugar makes children hyperactive.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.440746933221817,
+  "pass": true,
+  "overlap": [
+   "children",
+   "makes",
+   "sugar"
+  ],
+  "top": "Children's Exercise Physiology. The reorganized and newly revised \"Children's Exercise Physiology, Second Edition, \" presents the most up-to-date research, methodology, and approaches related to children's physiologic responses to exercise. The book examines n"
+ },
+ {
+  "cat": "E",
+  "claim": "Cracking your knuckles causes arthritis.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.38506948947906494,
+  "pass": true,
+  "overlap": [
+   "arthritis",
+   "causes"
+  ],
+  "top": "A Candidate Gene Approach Identifies the TRAF1/C5 Region as a Risk Factor for Rheumatoid Arthritis. Correction for:    Kurreeman FAS, Padyukov L, Marques RB, Schrodi SJ, Seddighzadeh M, et al. (2007) A Candidate Gene Approach Identifies the TRAF1/C5 Region as "
+ },
+ {
+  "cat": "E",
+  "claim": "Reading in dim light damages your eyesight.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.3749215006828308,
+  "pass": true,
+  "overlap": [
+   "light"
+  ],
+  "top": "Differential effects of charybdotoxin on the activity of retinal ganglion cells in the dark- and light-adapted mouse retina. Patch-clamp recordings were made from retinal ganglion cells in the mouse retina. Under dark adaptation, blockage of BK(Ca) channels in"
+ },
+ {
+  "cat": "E",
+  "claim": "Chocolate causes acne.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.39945322275161743,
+  "pass": true,
+  "overlap": [
+   "chocolate"
+  ],
+  "top": "Our attitude towards candy\u2014\u201cif it tastes that good, it can't be healthy\u201d\u2014betrays society's puritanical stance towards pleasure. Candy has been blamed for various ills, including hyperactivity in children; however, clinical trials have not supported this.1  Can"
+ },
+ {
+  "cat": "E",
+  "claim": "Drinking eight glasses of water a day is necessary.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5120420455932617,
+  "pass": true,
+  "overlap": [
+   "necessary",
+   "water"
+  ],
+  "top": "When hand washing with soap and water is unavailable, a sufficient volume of sanitizer is necessary to ensure complete hand coverage, and compliance is critical for appropriate hand hygiene."
+ },
+ {
+  "cat": "E",
+  "claim": "Shaving makes hair grow back thicker.",
+  "expected": "ABSTAINED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.3345949053764343,
+  "pass": true,
+  "overlap": [
+   "hair"
+  ],
+  "top": "Genome-wide maps of histone modifications unwind in vivo chromatin states of the hair follicle lineage.. Using mouse skin, where bountiful reservoirs of synchronized hair follicle stem cells (HF-SCs) fuel cycles of regeneration, we explore how adult SCs remode"
+ }
+]

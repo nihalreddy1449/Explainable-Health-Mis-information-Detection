@@ -1,0 +1,40 @@
+
+##############################################################################
+TIER 2 IMPROVEMENT RUN  2026-09-14 01:32:08  device=cuda
+##############################################################################
+
+==============================================================================
+EXPERIMENT A - tune the binary decision threshold (existing PubMedBERT model)
+==============================================================================
+  tuned threshold 0.510 (val macro-F1 0.6035)
+  argmax (current)             acc=0.6887  macroF1=0.6609 [0.608, 0.714]  recall(NOT_CRED)=0.5981
+  validation-tuned threshold   acc=0.7107  macroF1=0.6714 [0.615, 0.721]  recall(NOT_CRED)=0.5421
+
+==============================================================================
+ALL RESULTS
+==============================================================================
+ experiment   backbone                        tag  accuracy  f1_macro    f1_macro_CI  recall_notcred  roc_auc
+A_threshold pubmedbert           argmax (current)    0.6887    0.6609 [0.608, 0.714]          0.5981   0.7275
+A_threshold pubmedbert validation-tuned threshold    0.7107    0.6714 [0.615, 0.721]          0.5421   0.7275
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_improvement_results.csv
+
+##############################################################################
+TIER 2 IMPROVEMENT RUN  2026-09-14 01:33:25  device=cuda
+##############################################################################
+
+==============================================================================
+EXPERIMENT A - tune the binary decision threshold (existing PubMedBERT model)
+==============================================================================
+  tuned threshold 0.510 (val macro-F1 0.6035)
+  argmax (current)             acc=0.6887  macroF1=0.6609 [0.608, 0.714]  recall(NOT_CRED)=0.5981
+  validation-tuned threshold   acc=0.7107  macroF1=0.6714 [0.615, 0.721]  recall(NOT_CRED)=0.5421
+
+==============================================================================
+EXPERIMENT B - encoder: deberta  (microsoft/deberta-v3-base)  max_len=512 bs=8x1
+==============================================================================
+  !! deberta FAILED: ValueError: Attempting to unscale FP16 gradients.
+
+==============================================================================
+EXPERIMENT B - encoder: modernbert  (answerdotai/ModernBERT-base)  max_len=2048 bs=2x4
+==============================================================================

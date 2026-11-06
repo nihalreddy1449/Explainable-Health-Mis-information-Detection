@@ -1,0 +1,119 @@
+{
+  "task": "article credibility assessment (CREDIBLE / NOT_CREDIBLE) + 10-criterion multi-label",
+  "dataset": "FakeHealth (HealthRelease + HealthStory)",
+  "n_articles": 2119,
+  "split_sizes": {
+    "train": 1483,
+    "validation": 318,
+    "test": 318
+  },
+  "majority_baseline": 0.6635220125786163,
+  "selected_model": "PubMedBERT, 512 tokens (section 6)",
+  "binary_results": {
+    "tier2_pubmedbert_binary": {
+      "run": "tier2_pubmedbert_binary",
+      "train_minutes": null,
+      "accuracy": 0.6887,
+      "f1_macro": 0.6609,
+      "recall_notcred": 0.5981,
+      "roc_auc": 0.7275
+    },
+    "tier2_bertbase_binary": {
+      "run": "tier2_bertbase_binary",
+      "train_minutes": null,
+      "accuracy": 0.6981,
+      "f1_macro": 0.5958,
+      "recall_notcred": 0.2897,
+      "roc_auc": 0.6713
+    }
+  },
+  "criteria_macro_f1": 0.5231999999999999,
+  "criteria_per_class": {
+    "costs": 0.811,
+    "harms": 0.73,
+    "evidence_quality": 0.703,
+    "benefits": 0.697,
+    "alternatives": 0.592,
+    "independent_srcs": 0.487,
+    "novelty": 0.394,
+    "press_release": 0.391,
+    "availability": 0.319,
+    "disease_mongering": 0.108
+  },
+  "composed_vs_direct": [
+    {
+      "model": "direct binary classifier",
+      "accuracy": 0.6887,
+      "f1_macro": 0.6609,
+      "recall_NOT_CREDIBLE": 0.5981
+    },
+    {
+      "model": "composed from 10 criteria",
+      "accuracy": 0.6824,
+      "f1_macro": 0.658,
+      "recall_NOT_CREDIBLE": 0.6168
+    },
+    {
+      "model": "majority baseline",
+      "accuracy": 0.6635,
+      "f1_macro": NaN,
+      "recall_NOT_CREDIBLE": 0.0
+    }
+  ],
+  "ablation": [
+    {
+      "variant": "base",
+      "chunked": false,
+      "lexical_features": false,
+      "train_minutes": null,
+      "accuracy": 0.695,
+      "f1_macro": 0.6727,
+      "recall_notcred": 0.6449,
+      "roc_auc": 0.7191
+    },
+    {
+      "variant": "lexical",
+      "chunked": false,
+      "lexical_features": true,
+      "train_minutes": null,
+      "accuracy": 0.7138,
+      "f1_macro": 0.669,
+      "recall_notcred": 0.514,
+      "roc_auc": 0.7139
+    },
+    {
+      "variant": "chunked",
+      "chunked": true,
+      "lexical_features": false,
+      "train_minutes": null,
+      "accuracy": 0.717,
+      "f1_macro": 0.6513,
+      "recall_notcred": 0.4206,
+      "roc_auc": 0.744
+    },
+    {
+      "variant": "chunked_lexical",
+      "chunked": true,
+      "lexical_features": true,
+      "train_minutes": null,
+      "accuracy": 0.7296,
+      "f1_macro": 0.6668,
+      "recall_notcred": 0.4393,
+      "roc_auc": 0.7274
+    }
+  ],
+  "ablation_conclusion": "neither chunked long-context nor lexical absence features improved macro-F1 beyond bootstrap noise; both reduced recall on NOT_CREDIBLE. The simple 512-token model is retained.",
+  "router_word_threshold": 60,
+  "criteria_thresholds": {
+    "costs": 0.45,
+    "benefits": 0.479,
+    "harms": 0.514,
+    "evidence_quality": 0.527,
+    "disease_mongering": 0.564,
+    "independent_srcs": 0.525,
+    "alternatives": 0.515,
+    "availability": 0.678,
+    "novelty": 0.622,
+    "press_release": 0.78
+  }
+}

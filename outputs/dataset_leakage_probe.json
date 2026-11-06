@@ -1,0 +1,17 @@
+{
+  "fakehealth": {
+    "tfidf_random": 0.6659294781367214,
+    "tfidf_source_disjoint": 0.6113867781976935,
+    "drop": 0.05454269993902794,
+    "n_sources": 450,
+    "sources_with_both_labels": 83,
+    "n_sources_total": 450
+  },
+  "recovery": {
+    "tfidf_random": 0.904,
+    "tfidf_publisher_disjoint": 0.773,
+    "drop": 0.131,
+    "n_publishers": 55,
+    "publishers_with_both_labels": 0
+  }
+}

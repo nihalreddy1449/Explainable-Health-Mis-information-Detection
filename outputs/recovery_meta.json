@@ -1,0 +1,18 @@
+{
+  "dataset": "ReCOVery (Zhou et al. 2020)",
+  "n_articles": 2013,
+  "n_publishers": 55,
+  "label_meaning": "OUTLET-level reliability from NewsGuard, propagated to every article. This is a DIFFERENT construct from FakeHealth, whose labels are per-article expert reviews of reporting quality.",
+  "split_rule": "publisher-disjoint (grouped), greedy largest-first quota fill",
+  "split_sizes": {
+    "train": 1409,
+    "validation": 299,
+    "test": 305
+  },
+  "majority_baseline": 0.674615002483855,
+  "tfidf_probe": {
+    "random_split_macro_f1": 0.904,
+    "publisher_disjoint_macro_f1": 0.773,
+    "inflation_from_publisher_memorisation": 0.131
+  }
+}

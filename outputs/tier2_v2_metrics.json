@@ -1,0 +1,143 @@
+{
+  "task": "Tier 2 article credibility - improved objective (v2)",
+  "change": "binary CE objective replaced by CORAL ordinal (P(rating>k), k=0..4) + 10 masked criteria heads on a shared PubMedBERT encoder; verdict composed from predicted criteria",
+  "dataset": "FakeHealth (HealthRelease + HealthStory)",
+  "split_sizes": {
+    "train": 1483,
+    "validation": 318,
+    "test": 318
+  },
+  "majority_baseline": 0.6635220125786163,
+  "shipped_v1": {
+    "accuracy": 0.6887,
+    "f1_macro": 0.6609,
+    "recall_notcred": 0.5981,
+    "roc_auc": 0.7275
+  },
+  "shipped_v2_ensemble": {
+    "ord": {
+      "accuracy": 0.7358,
+      "f1_macro": 0.6999,
+      "recall_notcred": 0.5794,
+      "roc_auc": 0.7274,
+      "pred_notcred_rate": 0.3176,
+      "threshold": 0.3567
+    },
+    "crit": {
+      "accuracy": 0.7327,
+      "f1_macro": 0.6971,
+      "recall_notcred": 0.5794,
+      "roc_auc": 0.7331,
+      "pred_notcred_rate": 0.3208,
+      "threshold": 0.474
+    },
+    "crit_nodm": {
+      "accuracy": 0.7296,
+      "f1_macro": 0.6928,
+      "recall_notcred": 0.5701,
+      "roc_auc": 0.7295,
+      "pred_notcred_rate": 0.3176,
+      "threshold": 0.4745
+    },
+    "crit_lr": {
+      "accuracy": 0.7296,
+      "f1_macro": 0.6943,
+      "recall_notcred": 0.5794,
+      "roc_auc": 0.7298,
+      "pred_notcred_rate": 0.3239,
+      "threshold": 0.4715
+    }
+  },
+  "confirmation_run": {
+    "n_seeds": 8,
+    "baseline_macroF1_mean": 0.6582,
+    "baseline_macroF1_std": 0.0227,
+    "welch_vs_baseline": {
+      "crit": {
+        "delta": 0.0216,
+        "t": 1.931,
+        "p": 0.0746,
+        "mean": 0.6798,
+        "std": 0.019
+      },
+      "crit_lr": {
+        "delta": 0.027,
+        "t": 2.624,
+        "p": 0.0221,
+        "mean": 0.6851,
+        "std": 0.015
+      },
+      "crit_nodm": {
+        "delta": 0.023,
+        "t": 2.182,
+        "p": 0.0486,
+        "mean": 0.6812,
+        "std": 0.0162
+      },
+      "ord": {
+        "delta": 0.0157,
+        "t": 1.527,
+        "p": 0.1525,
+        "mean": 0.6738,
+        "std": 0.015
+      }
+    }
+  },
+  "criteria_macro_f1_v1": 0.5231999999999999,
+  "criteria_macro_f1_v2": 0.5557,
+  "criteria_mean_mcc_v2": 0.211,
+  "criteria_per_class_v2": {
+    "costs": 0.848,
+    "benefits": 0.741,
+    "harms": 0.774,
+    "evidence_quality": 0.696,
+    "disease_mongering": 0.125,
+    "independent_srcs": 0.588,
+    "alternatives": 0.573,
+    "availability": 0.348,
+    "novelty": 0.441,
+    "press_release": 0.423
+  },
+  "criteria_mcc_v2": {
+    "costs": 0.314,
+    "benefits": 0.251,
+    "harms": 0.3,
+    "evidence_quality": 0.24,
+    "disease_mongering": 0.024,
+    "independent_srcs": 0.193,
+    "alternatives": 0.121,
+    "availability": 0.126,
+    "novelty": 0.197,
+    "press_release": 0.344
+  },
+  "negative_results": {
+    "input_representation": "chunked long context, 15 lexical features, and head+tail truncation all failed to beat plain 512-token truncation",
+    "encoder": "ModernBERT (2048 ctx), BiomedBERT-large all worse than PubMedBERT-base; DeBERTa-v3 crash fixed (fp32 load) but full 3-seed comparison not completed",
+    "binary_head": "adding a binary head to the criteria/ordinal heads consistently reduced performance"
+  },
+  "known_limitations": [
+    "test set is 318 articles; paired bootstrap cannot resolve the gain (P(no gain)=0.09) even though it is reproducible across retrainings (p=0.022)",
+    "disease_mongering remains unlearnable (MCC 0.024, AUC 0.538)",
+    "composer fitted on the 318-article validation split",
+    "model selection uses macro-F1 at threshold 0.5 on the ordinal score, not that head's natural operating point",
+    "single domain: US health journalism"
+  ],
+  "shipped_v2_single_checkpoint": {
+    "ord": {
+      "accuracy": 0.7296,
+      "f1_macro": 0.6958,
+      "roc_auc": 0.7167
+    },
+    "crit": {
+      "accuracy": 0.7264,
+      "f1_macro": 0.69,
+      "roc_auc": 0.7188
+    },
+    "crit_lr": {
+      "accuracy": 0.7201,
+      "f1_macro": 0.6829,
+      "roc_auc": 0.7159
+    }
+  },
+  "checkpoint_note": "model.pt contains the weights of ONE seed (the first in 'seeds'), not the 5-seed ensemble. The 'report' block below is the ENSEMBLE, which is what the write-up quotes. Loading model.pt alone reproduces 'single_checkpoint_report'. To reproduce the ensemble, retrain all seeds in 'seeds' and average the score vectors (experiments_tier2/t2_final.py --mode final)."
+}

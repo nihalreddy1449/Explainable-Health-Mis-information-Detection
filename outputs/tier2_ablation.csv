@@ -1,0 +1,5 @@
+variant,chunked,lexical_features,train_minutes,accuracy,f1_macro,recall_notcred,roc_auc
+base,False,False,,0.695,0.6727,0.6449,0.7191
+lexical,False,True,,0.7138,0.669,0.514,0.7139
+chunked,True,False,,0.717,0.6513,0.4206,0.744
+chunked_lexical,True,True,,0.7296,0.6668,0.4393,0.7274

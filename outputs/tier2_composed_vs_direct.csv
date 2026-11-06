@@ -1,0 +1,4 @@
+model,accuracy,f1_macro,recall_NOT_CREDIBLE
+direct binary classifier,0.6887,0.6609,0.5981
+composed from 10 criteria,0.6824,0.658,0.6168
+majority baseline,0.6635,,0.0

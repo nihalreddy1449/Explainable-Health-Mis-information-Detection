@@ -1,0 +1,95 @@
+
+##############################################################################
+T2 LAB phase=encoder  2026-09-16 04:26:32  device=cuda amp=torch.bfloat16
+##############################################################################
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+==============================================================================
+VARIANT H_deberta   backbone=deberta heads=['criteria', 'ordinal'] input=head max_len=512 bs=4x2 lr=1e-05 epochs=5
+==============================================================================
+  seed 42
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 31664.78it/s]
+[transformers] [1mDebertaV2Model LOAD REPORT[0m from: microsoft/deberta-v3-base
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  !! H_deberta FAILED: RuntimeError: expected mat1 and mat2 to have the same dtype, but got: struct c10::Half != float
+el = train_one(model, tr_ds, va_ds, yv, epochs, lr, bs, accum, name)
+  File "C:\Users\nihal\Desktop\Project Phase\experiments_tier2\t2_lab.py", line 303, in train_one
+    loss = model(**batch)["loss"]
+           ~~~~~^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\nihal\Desktop\Project Phase\experiments_tier2\t2_lab.py", line 231, in forward
+    ol = self.ord_dir(pooled) + self.ord_bias          # (B, K)
+         ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\nihal\Desktop\Project Phase\.venv\Lib\site-packages\torch\nn\modules\linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: struct c10::Half != float
+
+
+==============================================================================
+VARIANT J_biomedlarge   backbone=biomedlarge heads=['criteria', 'ordinal'] input=head max_len=512 bs=2x4 lr=1e-05 epochs=5
+==============================================================================
+  seed 42
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 41209.49it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-BiomedBERT-large-uncased-abstract
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+      ep1 loss=0.6496 val_macroF1(ord)=0.4146  <- best
+      ep2 loss=0.6141 val_macroF1(ord)=0.5087  <- best
+      ep3 loss=0.5477 val_macroF1(ord)=0.4330
+      ep4 loss=0.4912 val_macroF1(ord)=0.4647
+      ep5 loss=0.4591 val_macroF1(ord)=0.5591  <- best
+  seed 1337
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 27677.47it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-BiomedBERT-large-uncased-abstract
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.

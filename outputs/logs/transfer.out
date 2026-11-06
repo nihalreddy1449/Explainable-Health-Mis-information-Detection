@@ -1,0 +1,187 @@
+
+################################################################################
+T2 TRANSFER  2026-09-16 08:15:24  device=cuda
+################################################################################
+
+================================================================================
+R1 - binary PubMedBERT on ReCOVery (publisher-disjoint splits)
+================================================================================
+  seed 42
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 54667.70it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.5482 val_macroF1(bin)=0.7693  <- best
+      ep2 loss=0.3087 val_macroF1(bin)=0.8331  <- best
+      ep3 loss=0.1694 val_macroF1(bin)=0.7996
+      ep4 loss=0.1086 val_macroF1(bin)=0.8867  <- best
+    acc=0.777 macroF1=0.752 recall=0.7143 auc=0.8537  (2.7 min)
+  seed 1337
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 35259.65it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.4998 val_macroF1(bin)=0.6337  <- best
+      ep2 loss=0.3053 val_macroF1(bin)=0.8531  <- best
+      ep3 loss=0.2022 val_macroF1(bin)=0.8735  <- best
+      ep4 loss=0.1205 val_macroF1(bin)=0.8885  <- best
+    acc=0.7213 macroF1=0.696 recall=0.6735 auc=0.8069  (2.9 min)
+  seed 2024
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 44744.64it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      ep1 loss=0.5644 val_macroF1(bin)=0.7918  <- best
+      ep2 loss=0.2852 val_macroF1(bin)=0.6738
+      ep3 loss=0.1623 val_macroF1(bin)=0.8599  <- best
+      ep4 loss=0.0801 val_macroF1(bin)=0.8580
+    acc=0.7541 macroF1=0.7231 recall=0.6531 auc=0.8393  (2.7 min)
+  seed-ensemble  acc=0.7574 macroF1=0.7313 auc=0.8408
+
+  per-seed macroF1 0.7237 +- 0.0280   (TF-IDF reference 0.773, majority baseline 0.674)
+
+================================================================================
+R2 - zero-shot cross-domain transfer
+================================================================================
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 35528.31it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  FakeHealth-v2 (ord) -> ReCOVery : acc=0.5279 macroF1=0.4939 auc=0.5039
+  FakeHealth-v2 (crit) -> ReCOVery : acc=0.5049 macroF1=0.46 auc=0.4864
+  (ReCOVery -> FakeHealth needs the R1 head, handled inside R1/R3)
+
+================================================================================
+R3 - ReCOVery -> FakeHealth intermediate-task transfer
+================================================================================
+  seed 42
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 39591.43it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      (encoder initialised from the ReCOVery run)
+      ep1 loss=0.6615 val_macroF1(ord)=0.6062  <- best
+      ep2 loss=0.6221 val_macroF1(ord)=0.6595  <- best
+      ep3 loss=0.5617 val_macroF1(ord)=0.6057
+      ep4 loss=0.5126 val_macroF1(ord)=0.5547
+      ep5 loss=0.4802 val_macroF1(ord)=0.5724
+    ord=0.6663  crit=0.6836  crit_nodm=0.6642  crit_lr=0.6670
+  seed 1337
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 31013.51it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      (encoder initialised from the ReCOVery run)
+      ep1 loss=0.6713 val_macroF1(ord)=0.3805  <- best
+      ep2 loss=0.6111 val_macroF1(ord)=0.5616  <- best
+      ep3 loss=0.5562 val_macroF1(ord)=0.4906
+      ep4 loss=0.5035 val_macroF1(ord)=0.4968
+      ep5 loss=0.4733 val_macroF1(ord)=0.5030
+    ord=0.6662  crit=0.6637  crit_nodm=0.6775  crit_lr=0.6730
+  seed 2024
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 50000.99it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+      (encoder initialised from the ReCOVery run)
+      ep1 loss=0.6532 val_macroF1(ord)=0.5470  <- best
+      ep2 loss=0.6022 val_macroF1(ord)=0.5728  <- best
+      ep3 loss=0.5554 val_macroF1(ord)=0.5732  <- best
+      ep4 loss=0.5025 val_macroF1(ord)=0.5248
+      ep5 loss=0.4664 val_macroF1(ord)=0.5438
+    ord=0.7013  crit=0.6984  crit_nodm=0.6941  crit_lr=0.6885
+
+  per-seed mean +- std (FakeHealth test, rate-matched):
+    crit       macroF1=0.6819 +- 0.0174  acc=0.7191  recall=0.5607  auc=0.7132
+    crit_lr    macroF1=0.6762 +- 0.0111  acc=0.7149  recall=0.5483  auc=0.7123
+    crit_nodm  macroF1=0.6786 +- 0.0150  acc=0.7159  recall=0.5576  auc=0.7101
+    ord        macroF1=0.6779 +- 0.0202  acc=0.7170  recall=0.5483  auc=0.7155
+
+  compare with the direct FakeHealth v2 confirmation run (outputs/tier2_confirm_seeds.csv): crit_lr 0.6851 +- 0.0160
+
+wrote C:\Users\nihal\Desktop\Project Phase\outputs\tier2_transfer_results.csv

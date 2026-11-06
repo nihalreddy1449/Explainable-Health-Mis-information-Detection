@@ -1,0 +1,19 @@
+
+.venv/
+datasets/
+models/
+.git/
+__pycache__/
+*.pyc
+.env
+
+# not published: internal viva preparation, the report and decks (personal details),
+# earlier reviews, the faculty's templates and working notes
+Presentation/Final Review/Project Guide/
+Presentation/Final Review/Report/
+Presentation/Zeroth Review/
+Presentation/First Review/
+FINAL REVIEW TEMPLATES/
+testing.txt
+explanation of chats/
+*.pptx

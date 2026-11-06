@@ -1,0 +1,4 @@
+retriever,recall@1,recall@3,recall@5,recall@10
+bm25,0.173,0.473,0.553,0.647
+dense,0.24,0.493,0.58,0.707
+hybrid,0.247,0.56,0.653,0.78

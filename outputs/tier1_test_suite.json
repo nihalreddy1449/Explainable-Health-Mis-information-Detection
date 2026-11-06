@@ -1,0 +1,108 @@
+{
+  "n_cases": 46,
+  "n_passed": 38,
+  "pass_rate": 0.8261,
+  "per_capability": [
+    {
+      "capability": "Supported claims",
+      "cases": 9,
+      "passed": 8
+    },
+    {
+      "capability": "Contradicted claims",
+      "cases": 12,
+      "passed": 7
+    },
+    {
+      "capability": "Negation handling",
+      "cases": 6,
+      "passed": 5
+    },
+    {
+      "capability": "Wording consistency",
+      "cases": 5,
+      "passed": 4
+    },
+    {
+      "capability": "Out-of-scope refusal",
+      "cases": 6,
+      "passed": 6
+    },
+    {
+      "capability": "Evidence sensitivity",
+      "cases": 6,
+      "passed": 6
+    },
+    {
+      "capability": "Confidence calibration",
+      "cases": 2,
+      "passed": 2
+    }
+  ],
+  "mean_confidence_when_answering": 0.9523,
+  "n_long_claims": 22,
+  "median_words": 13,
+  "max_words": 22,
+  "abstention_threshold": 0.6,
+  "low_confidence_threshold": 0.9,
+  "failures": [
+    {
+      "id": "A9",
+      "capability": "Supported claims",
+      "claim": "Universal mask wearing adopted early in a regional outbreak has a greater effect on transmission than the same policy adopted late.",
+      "expected": "Supported by evidence",
+      "actual": "No relevant evidence found"
+    },
+    {
+      "id": "B8",
+      "capability": "Contradicted claims",
+      "claim": "Remdesivir has no effect on how quickly hospitalised COVID-19 patients recover, so it should not be used at all.",
+      "expected": "Contradicted by evidence",
+      "actual": "Supported by evidence"
+    },
+    {
+      "id": "B9",
+      "capability": "Contradicted claims",
+      "claim": "Drinking alcohol protects you against COVID-19.",
+      "expected": "Contradicted by evidence",
+      "actual": "Supported by evidence"
+    },
+    {
+      "id": "B10",
+      "capability": "Contradicted claims",
+      "claim": "Pets such as dogs and cats spread COVID-19 to their owners.",
+      "expected": "Contradicted by evidence",
+      "actual": "Supported by evidence"
+    },
+    {
+      "id": "B11",
+      "capability": "Contradicted claims",
+      "claim": "Eating garlic every day prevents infection with the coronavirus.",
+      "expected": "Contradicted by evidence",
+      "actual": "No relevant evidence found"
+    },
+    {
+      "id": "B12",
+      "capability": "Contradicted claims",
+      "claim": "5G mobile phone networks spread the coronavirus between towns.",
+      "expected": "Contradicted by evidence",
+      "actual": "No relevant evidence found"
+    },
+    {
+      "id": "C3b",
+      "capability": "Negation handling",
+      "claim": "The ketogenic diet does not reduce seizure frequency in children with epilepsy that resists standard drug treatment.",
+      "expected": "Contradicted by evidence",
+      "actual": "No relevant evidence found"
+    },
+    {
+      "id": "D3",
+      "capability": "Wording consistency",
+      "claim": "so basically hydroxychloroquine doesnt actually help covid patients get better",
+      "expected": "Supported by evidence",
+      "actual": "No relevant evidence found"
+    }
+  ],
+  "note": "Deliberately hard functional test cases: long realistic claims, folk myths and informal wording, with failing cases kept in. Not a performance benchmark; see outputs/tier1_metrics.json for held-out results.",
+  "runtime_seconds": 7.2
+}

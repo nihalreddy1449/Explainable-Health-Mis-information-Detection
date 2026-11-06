@@ -1,0 +1,484 @@
+[
+ {
+  "cat": "B",
+  "claim": "Pets such as dogs and cats spread COVID-19 to humans.",
+  "expected": "REFUTED",
+  "got": "SUPPORTED",
+  "conf": 0.9955995082855225,
+  "sim": 0.7502994537353516,
+  "pass": false,
+  "passages": [
+   "We tested 21 domestic pets (9 cats and 12 dogs) living in close contact with their owners (belonging to a veterinary community of 20 students) in which two students tested positive for COVID-19 and several others (n = 11",
+   "Therefore, there is a possibility of spreading SARS-CoV-2 through domestic pets. There are now many reports of SARS-CoV-2 positive cases in dogs, cats, tigers, lion, and minks.",
+   "Therefore, there is a possibility of spreading SARS-CoV-2 through domestic pets. There are now many reports of SARS-CoV-2 positive cases in dogs, cats, tigers, lion, and minks. Experimental data showed ferrets and cats a"
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Hot weather stops the spread of COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9966829419136047,
+  "sim": 0.6839821338653564,
+  "pass": true,
+  "passages": [
+   "We show that the delay between exposure and detection of infection complicates the estimation of weather impact on COVID-19 transmission, potentially explaining significant variability in results to-date",
+   "These results provide evidence for the relationship between several weather variables and the spread of COVID-19. However, the (conservatively) estimated relationships are not strong enough to seasonally control the epid",
+   "social distancing and have seen slowing the spread of COVID-19."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Vitamin C and vitamin E supplements prevent cancer in men.",
+  "expected": "REFUTED",
+  "got": "SUPPORTED",
+  "conf": 0.9719960689544678,
+  "sim": 0.7441403865814209,
+  "pass": false,
+  "passages": [
+   "CONTEXT Many individuals take vitamins in the hopes of preventing chronic diseases such as cancer, and vitamins E and C are among the most common individual supplements. A large-scale randomized trial suggested that vita",
+   "Vitamins E and C in the prevention of prostate and total cancer in men: the Physicians' Health Study II randomized controlled trial.. CONTEXT Many individuals take vitamins in the hopes of preventing chronic diseases suc",
+   "Here, we review theoretical mechanisms and evidence related to efficacy and safety of select supplements in the setting of COVID-19, including vitamin C, vitamin D, zinc, elderberry, and silver."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Lowering homocysteine with B vitamins reduces deaths in kidney disease patients.",
+  "expected": "REFUTED",
+  "got": "SUPPORTED",
+  "conf": 0.9979848861694336,
+  "sim": 0.6831657290458679,
+  "pass": false,
+  "passages": [
+   "CONTEXT High plasma homocysteine levels are a risk factor for mortality and vascular disease in observational studies of patients with chronic kidney disease. Folic acid and B vitamins decrease homocysteine levels in thi",
+   "Effect of homocysteine lowering on mortality and vascular disease in advanced chronic kidney disease and end-stage renal disease: a randomized controlled trial.. CONTEXT High plasma homocysteine levels are a risk factor ",
+   "Preventing coronary heart disease: B vitamins and homocysteine.. The list of preventable and reversible risk factors for atherosclerotic cardiovascular disease continues to grow. Cigarette smoking, high blood pressure, p"
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Giving human albumin reduces deaths in critically ill patients.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.8089709281921387,
+  "sim": 0.6628713607788086,
+  "pass": true,
+  "passages": [
+   "Human albumin administration in critically ill patients: systematic review of randomised controlled trials.. OBJECTIVE To quantify effect on mortality of administering human albumin or plasma protein fraction during mana",
+   "Hypoalbuminemia in acute illness: is there a rationale for intervention? A meta-analysis of cohort studies and controlled trials.. OBJECTIVE To determine whether hypoalbuminemia is an independent risk factor for poor out",
+   "Enteral nutrition in the critically ill patient.. Timing and route of nutrition provided to critically ill patients can affect their outcome. Early enteral nutrition has been shown to decrease specifically infectious mor"
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Hydroxychloroquine improves clinical outcomes in COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.8550580143928528,
+  "sim": 0.712310254573822,
+  "pass": true,
+  "passages": [
+   "the use of hydroxychloroquine alone was associated with increased mortality in COVID-19 patients.",
+   "The odds of mortality were significantly higher in patients treated with Hydroxychloroquine + Azithromycin than supportive care alone [2.34 (95% CI: 1.63, 3.34); I2 = 0%]. A pooled analysis of recently published studies ",
+   "Despite its small sample size our survey shows that hydroxychloroquine treatment is significantly associated with viral load reduction/disappearance in COVID-19 patients and its effect is reinforced by azithromycin."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Hydroxychloroquine reduces deaths in COVID-19 patients.",
+  "expected": "REFUTED",
+  "got": "SUPPORTED",
+  "conf": 0.554147481918335,
+  "sim": 0.7985076904296875,
+  "pass": false,
+  "passages": [
+   "the use of hydroxychloroquine alone was associated with increased mortality in COVID-19 patients.",
+   "The odds of mortality were significantly higher in patients treated with Hydroxychloroquine + Azithromycin than supportive care alone [2.34 (95% CI: 1.63, 3.34); I2 = 0%]. A pooled analysis of recently published studies ",
+   "Despite its small sample size our survey shows that hydroxychloroquine treatment is significantly associated with viral load reduction/disappearance in COVID-19 patients and its effect is reinforced by azithromycin."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Children are not affected by COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.996728777885437,
+  "sim": 0.7549551725387573,
+  "pass": true,
+  "passages": [
+   "Children of all ages can get COVID-19, although they appear to be affected less frequently than adults, as reported in our preliminary survey.",
+   "COVID-19 infection may be associated with severe disease in childhood presenting to a specialist hospital, but does not appear significantly different in severity to other causes of similar clinical presentations. In chi",
+   "Novel coronavirus disease (COVID-19) is spreading globally. Little is known about the risk factors for the clinical outcomes of COVID-19 in children."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Only elderly people can catch COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9889923930168152,
+  "sim": 0.6523900032043457,
+  "pass": true,
+  "passages": [
+   "As COVID-19 keeps people at home under quarantine, many have wondered how susceptible their canine and feline companions are to the disease",
+   "The evidence confirms COVID-19 transmission from people who were asymptomatic at the time.",
+   "Children are likely to be experiencing worry, anxiety and fear and older people are also those with underlying health conditions, having been identified as more vulnerable to COVID-19, can be extremely frightening and ve"
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Diabetes does not affect how severe COVID-19 becomes.",
+  "expected": "REFUTED",
+  "got": "ABSTAINED",
+  "conf": null,
+  "sim": 0.5943390727043152,
+  "pass": false,
+  "passages": [
+   "COVID-19 infection may be associated with severe disease in childhood presenting to a specialist hospital, but does not appear significantly different in severity to other causes of similar clinical presentations. In chi",
+   "The available evidence suggests that CQ or HCQ does not improve clinical outcomes in COVID-19.",
+   "the association between DM and COVID-19-induced severe complications is still unclear"
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Dexamethasone has no effect on deaths in severe COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9882931113243103,
+  "sim": 0.7480430603027344,
+  "pass": true,
+  "passages": [
+   "In June 2020, a large randomised controlled clinical trial in the UK found that dexamethasone was effective in reducing the number of deaths in patients with severe coronavirus disease 2019 (COVID-19).",
+   "Recent announcements indicated, without sharing any distinct published set of results, that the corticosteroid dexamethasone may reduce mortality of severe COVID-19 patients only.",
+   "The efficacy of dexamethasone in preventing mortality in critical Covid-19 suggests that inflammation has a causal role in death."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Face masks have no effect on COVID-19 case numbers.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9958062171936035,
+  "sim": 0.77165687084198,
+  "pass": true,
+  "passages": [
+   "Depending on the region we analyse, we find that face masks reduced the cumulative number of registered Covid-19 cases between 2.3% and 13% over a period of 10 days after they became compulsory. Assessing the credibility",
+   "Model simulations, using data relevant to COVID-19 dynamics in the US states of New York and Washington, suggest that broad adoption of even relatively ineffective face masks may meaningfully reduce community transmissio",
+   "Face masks are an avenue to curb the spread of coronavirus, but few people in Western societies wear face masks."
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Remdesivir has no effect on recovery time in COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9693900346755981,
+  "sim": 0.6591582894325256,
+  "pass": true,
+  "passages": [
+   "remdesivir has a modest yet significant reduction in mortality and significantly improves the time to recovery",
+   "In early research, the targeted antivirals remdesivir and favipiravir appear to benefit patients by decreasing viral replication; clinical trials suggest that remdesivir speeds recovery from COVID-19.",
+   "Numerous clinical trials have been launched to identify effective treatments for COVID-19. Initial data from a placebo-controlled study suggest faster time to recovery in patients on remdesivir; it is now being evaluated"
+  ]
+ },
+ {
+  "cat": "B",
+  "claim": "Loss of smell is not linked to COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9960581064224243,
+  "sim": 0.6547951698303223,
+  "pass": true,
+  "passages": [
+   "Quantitative smell testing demonstrates that decreased smell function, but not always anosmia, is a major marker for SARS-CoV-2 infection and suggests the possibility that smell testing may help, in some cases, to identi",
+   "a popular theory has linked 5G to the spread of COVID-19",
+   "However, other manifestations such as headache, abdominal pain, diarrhea, loss of taste and smell were added to the clinical spectrum, during the course of the COVID19 pandemic."
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "Dexamethasone reduces deaths in severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9978904128074646,
+  "sim": 0.7344341278076172,
+  "pass": true,
+  "passages": [
+   "In June 2020, a large randomised controlled clinical trial in the UK found that dexamethasone was effective in reducing the number of deaths in patients with severe coronavirus disease 2019 (COVID-19).",
+   "Recent announcements indicated, without sharing any distinct published set of results, that the corticosteroid dexamethasone may reduce mortality of severe COVID-19 patients only.",
+   "The efficacy of dexamethasone in preventing mortality in critical Covid-19 suggests that inflammation has a causal role in death."
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "Dexamethasone does not reduce deaths in severe COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9834610223770142,
+  "sim": 0.7091575264930725,
+  "pass": true,
+  "passages": [
+   "In June 2020, a large randomised controlled clinical trial in the UK found that dexamethasone was effective in reducing the number of deaths in patients with severe coronavirus disease 2019 (COVID-19).",
+   "Recent announcements indicated, without sharing any distinct published set of results, that the corticosteroid dexamethasone may reduce mortality of severe COVID-19 patients only.",
+   "The efficacy of dexamethasone in preventing mortality in critical Covid-19 suggests that inflammation has a causal role in death."
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "Diabetes increases the risk of severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9715496897697449,
+  "sim": 0.7159969806671143,
+  "pass": true,
+  "passages": [
+   "COVID-19 infection may be associated with severe disease in childhood presenting to a specialist hospital, but does not appear significantly different in severity to other causes of similar clinical presentations. In chi",
+   "COVID-19 patients with diabetes were more likely to develop severe or critical disease conditions with more complications, and had higher incidence rates of antibiotic therapy, non-invasive and invasive mechanical ventil",
+   "Our findings support a causal effect of elevated BMI and smoking on risk of sepsis and severe covid-19."
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "Diabetes does not increase the risk of severe COVID-19.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9683963060379028,
+  "sim": 0.659421443939209,
+  "pass": true,
+  "passages": [
+   "COVID-19 infection may be associated with severe disease in childhood presenting to a specialist hospital, but does not appear significantly different in severity to other causes of similar clinical presentations. In chi",
+   "This has led to the hypothesis that use of ACEIs and ARBs may increase the risk of developing severe COVID-19.",
+   "Our findings support a causal effect of elevated BMI and smoking on risk of sepsis and severe covid-19."
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "The ketogenic diet reduces seizures in children with epilepsy.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9970790147781372,
+  "sim": 0.7228354215621948,
+  "pass": true,
+  "passages": [
+   "The ketogenic diet for the treatment of childhood epilepsy: a randomised controlled trial.. BACKGROUND The ketogenic diet has been widely and successfully used to treat children with drug-resistant epilepsy since the 192",
+   "Febrile (fever-induced) seizures affect 3\u20135% of infants and young children. Despite the high incidence of febrile seizures, their contribution to the development of epilepsy later in life has remained controversial. Comb",
+   "Febrile seizures in the developing brain result in persistent modification of neuronal excitability in limbic circuits. Febrile (fever-induced) seizures affect 3\u20135% of infants and young children. Despite the high inciden"
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "The ketogenic diet does not reduce seizures in children with epilepsy.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9104461669921875,
+  "sim": 0.6416701674461365,
+  "pass": true,
+  "passages": [
+   "The ketogenic diet for the treatment of childhood epilepsy: a randomised controlled trial.. BACKGROUND The ketogenic diet has been widely and successfully used to treat children with drug-resistant epilepsy since the 192",
+   "Febrile (fever-induced) seizures affect 3\u20135% of infants and young children. Despite the high incidence of febrile seizures, their contribution to the development of epilepsy later in life has remained controversial. Comb",
+   "Febrile seizures in the developing brain result in persistent modification of neuronal excitability in limbic circuits. Febrile (fever-induced) seizures affect 3\u20135% of infants and young children. Despite the high inciden"
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "Loss of smell is a sign of SARS-CoV-2 infection.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.958808422088623,
+  "sim": 0.7599167823791504,
+  "pass": true,
+  "passages": [
+   "Quantitative smell testing demonstrates that decreased smell function, but not always anosmia, is a major marker for SARS-CoV-2 infection and suggests the possibility that smell testing may help, in some cases, to identi",
+   "Although a few pets presented many clinical signs indicative for a coronavirus infection, no animal tested positive for SARS-CoV-2 by RT-PCR and no antibodies against SARS-CoV-2 were detectable in their blood using an im",
+   "However, other manifestations such as headache, abdominal pain, diarrhea, loss of taste and smell were added to the clinical spectrum, during the course of the COVID19 pandemic."
+  ]
+ },
+ {
+  "cat": "C",
+  "claim": "Loss of smell is not a sign of SARS-CoV-2 infection.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9838348627090454,
+  "sim": 0.745881199836731,
+  "pass": true,
+  "passages": [
+   "Quantitative smell testing demonstrates that decreased smell function, but not always anosmia, is a major marker for SARS-CoV-2 infection and suggests the possibility that smell testing may help, in some cases, to identi",
+   "Although a few pets presented many clinical signs indicative for a coronavirus infection, no animal tested positive for SARS-CoV-2 by RT-PCR and no antibodies against SARS-CoV-2 were detectable in their blood using an im",
+   "Whether antibodies are important for the adaptive immune responses against SARS-CoV-2 infection needs to be determined."
+  ]
+ },
+ {
+  "cat": "D",
+  "claim": "Hydroxychloroquine does not improve outcomes in COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9977697134017944,
+  "sim": 0.8278929591178894,
+  "pass": true,
+  "passages": [
+   "The available evidence suggests that CQ or HCQ does not improve clinical outcomes in COVID-19.",
+   "the use of hydroxychloroquine alone was associated with increased mortality in COVID-19 patients.",
+   "Despite its small sample size our survey shows that hydroxychloroquine treatment is significantly associated with viral load reduction/disappearance in COVID-19 patients and its effect is reinforced by azithromycin."
+  ]
+ },
+ {
+  "cat": "D",
+  "claim": "HCQ fails to improve clinical outcomes for COVID-19 patients.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9924847483634949,
+  "sim": 0.7694237232208252,
+  "pass": true,
+  "passages": [
+   "The available evidence suggests that CQ or HCQ does not improve clinical outcomes in COVID-19.",
+   "Among patients with COVID-19, the use of HCQ could significantly shorten TTCR and promote the absorption of pneumonia.",
+   "HCQ should be prescribed as a part of treatment for critically ill COVID-19 patients, with possible outcome of saving lives."
+  ]
+ },
+ {
+  "cat": "D",
+  "claim": "Chloroquine and hydroxychloroquine do not help COVID-19 patients recover.",
+  "expected": "SUPPORTED",
+  "got": "REFUTED",
+  "conf": 0.9973822236061096,
+  "sim": 0.6137913465499878,
+  "pass": false,
+  "passages": [
+   "the use of hydroxychloroquine alone was associated with increased mortality in COVID-19 patients.",
+   "Most patients with coronavirus disease (COVID-19) who show mild symptoms are sent home by physicians to recover.",
+   "Despite its small sample size our survey shows that hydroxychloroquine treatment is significantly associated with viral load reduction/disappearance in COVID-19 patients and its effect is reinforced by azithromycin."
+  ]
+ },
+ {
+  "cat": "D",
+  "claim": "Face masks lowered the number of COVID-19 cases.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9983657002449036,
+  "sim": 0.8047847747802734,
+  "pass": true,
+  "passages": [
+   "Depending on the region we analyse, we find that face masks reduced the cumulative number of registered Covid-19 cases between 2.3% and 13% over a period of 10 days after they became compulsory. Assessing the credibility",
+   "Model simulations, using data relevant to COVID-19 dynamics in the US states of New York and Washington, suggest that broad adoption of even relatively ineffective face masks may meaningfully reduce community transmissio",
+   "We make 3 key observations: 1. Masks, even with suboptimal efficacy in both prevention of acquisition and transmission of infection, could substantially decrease the reproduction number for COVID-19 if widely used. 2. Wi"
+  ]
+ },
+ {
+  "cat": "D",
+  "claim": "Making face masks compulsory reduced COVID-19 infections.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9978044629096985,
+  "sim": 0.7675907611846924,
+  "pass": true,
+  "passages": [
+   "Depending on the region we analyse, we find that face masks reduced the cumulative number of registered Covid-19 cases between 2.3% and 13% over a period of 10 days after they became compulsory. Assessing the credibility",
+   "Evidence that face masks provide effective protection against respiratory infections in the community is scarce. However, face masks are widely used by health workers as part of droplet precautions when caring for patien",
+   "Model simulations, using data relevant to COVID-19 dynamics in the US states of New York and Washington, suggest that broad adoption of even relatively ineffective face masks may meaningfully reduce community transmissio"
+  ]
+ },
+ {
+  "cat": "D",
+  "claim": "Patients with diabetes are more likely to develop severe COVID-19.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9974309802055359,
+  "sim": 0.7646650075912476,
+  "pass": true,
+  "passages": [
+   "COVID-19 patients with diabetes were more likely to develop severe or critical disease conditions with more complications, and had higher incidence rates of antibiotic therapy, non-invasive and invasive mechanical ventil",
+   "the greater susceptibility of individuals with underlying cardiovascular conditions to develop more severe Covid-19 with higher mortality rate is likely to be confounded, in part, by age and the type of co-morbidities. P",
+   "COVID-19 patients with hypertension had more severe secondary infections, cardiac and renal dysfunction, and depletion of CD8+ cells on admission. Patients with hypertension were more likely to have comorbidities and com"
+  ]
+ },
+ {
+  "cat": "F",
+  "claim": "COVID-19 vaccines can cause myocarditis in young males.",
+  "evidence_kind": "supporting",
+  "evidence": "Surveillance data show a small but statistically significant increased incidence of myocarditis following mRNA COVID-19 vaccination, concentrated in males aged 16 to 29 after the second dose.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9818260669708252,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "COVID-19 vaccines can cause myocarditis in young males.",
+  "evidence_kind": "refuting",
+  "evidence": "A large cohort study found no association between mRNA COVID-19 vaccination and myocarditis incidence in any age or sex group.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9978712797164917,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "COVID-19 vaccines can cause myocarditis in young males.",
+  "evidence_kind": "unrelated",
+  "evidence": "The Great Barrier Reef is the world's largest coral reef system, located off the coast of Queensland, Australia.",
+  "expected": "NEI",
+  "got": "NEI",
+  "conf": 0.9978781938552856,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "Vitamin D supplements reduce the severity of COVID-19.",
+  "evidence_kind": "supporting",
+  "evidence": "In a randomised trial, hospitalised COVID-19 patients given high-dose vitamin D were significantly less likely to need intensive care than patients given placebo.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9979222416877747,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "Vitamin D supplements reduce the severity of COVID-19.",
+  "evidence_kind": "refuting",
+  "evidence": "A large randomised controlled trial found that vitamin D supplementation did not reduce the severity of COVID-19, intensive care admission, or mortality compared with placebo.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9981472492218018,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "Vitamin D supplements reduce the severity of COVID-19.",
+  "evidence_kind": "unrelated",
+  "evidence": "The Amazon River carries more water than any other river in the world and flows through Brazil, Peru and Colombia.",
+  "expected": "NEI",
+  "got": "NEI",
+  "conf": 0.9983125925064087,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "Zinc lozenges shorten the duration of the common cold.",
+  "evidence_kind": "supporting",
+  "evidence": "A meta-analysis of randomised trials found that zinc lozenges reduced the duration of common cold symptoms by about one third compared with placebo.",
+  "expected": "SUPPORTED",
+  "got": "SUPPORTED",
+  "conf": 0.9982253909111023,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "Zinc lozenges shorten the duration of the common cold.",
+  "evidence_kind": "refuting",
+  "evidence": "A randomised placebo-controlled trial found that zinc lozenges had no effect on the duration or severity of common cold symptoms.",
+  "expected": "REFUTED",
+  "got": "REFUTED",
+  "conf": 0.9976790547370911,
+  "pass": true
+ },
+ {
+  "cat": "F",
+  "claim": "Zinc lozenges shorten the duration of the common cold.",
+  "evidence_kind": "unrelated",
+  "evidence": "Mount Everest, on the border of Nepal and China, is the highest mountain above sea level.",
+  "expected": "NEI",
+  "got": "NEI",
+  "conf": 0.9976837635040283,
+  "pass": true
+ }
+]
